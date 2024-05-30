@@ -110,7 +110,7 @@ export default function Component() {
   );
 }
 
-function DeleteIcon(props) {
+function DeleteIcon(props: any) {
   return (
     <svg
       {...props}
@@ -131,7 +131,7 @@ function DeleteIcon(props) {
   );
 }
 
-function TrashIcon(props) {
+function TrashIcon(props: any) {
   return (
     <svg
       {...props}

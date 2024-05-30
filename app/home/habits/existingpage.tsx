@@ -117,7 +117,7 @@ function Dashboard() {
 
 export default Dashboard;
 
-function CalendarDaysIcon(props) {
+function CalendarDaysIcon(props: any) {
   return (
     <svg
       {...props}
@@ -145,7 +145,7 @@ function CalendarDaysIcon(props) {
   );
 }
 
-function CheckIcon(props) {
+function CheckIcon(props: any) {
   return (
     <svg
       {...props}
@@ -164,7 +164,7 @@ function CheckIcon(props) {
   );
 }
 
-function CogIcon(props) {
+function CogIcon(props: any) {
   return (
     <svg
       {...props}
@@ -196,7 +196,7 @@ function CogIcon(props) {
   );
 }
 
-function FlameIcon(props) {
+function FlameIcon(props: any) {
   return (
     <svg
       {...props}
@@ -215,7 +215,7 @@ function FlameIcon(props) {
   );
 }
 
-function PlusIcon(props) {
+function PlusIcon(props: any) {
   return (
     <svg
       {...props}
@@ -235,7 +235,7 @@ function PlusIcon(props) {
   );
 }
 
-function TrophyIcon(props) {
+function TrophyIcon(props: any) {
   return (
     <svg
       {...props}

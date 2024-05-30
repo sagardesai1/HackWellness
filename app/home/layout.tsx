@@ -209,7 +209,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-function BellIcon(props) {
+function BellIcon(props: any) {
   return (
     <svg
       {...props}
@@ -229,7 +229,7 @@ function BellIcon(props) {
   );
 }
 
-function CalendarIcon(props) {
+function CalendarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -251,7 +251,7 @@ function CalendarIcon(props) {
   );
 }
 
-function CheckIcon(props) {
+function CheckIcon(props: any) {
   return (
     <svg
       {...props}
@@ -270,7 +270,7 @@ function CheckIcon(props) {
   );
 }
 
-function CircleUserIcon(props) {
+function CircleUserIcon(props: any) {
   return (
     <svg
       {...props}
@@ -291,7 +291,7 @@ function CircleUserIcon(props) {
   );
 }
 
-function ClipboardListIcon(props) {
+function ClipboardListIcon(props: any) {
   return (
     <svg
       {...props}
@@ -315,7 +315,7 @@ function ClipboardListIcon(props) {
   );
 }
 
-function HomeIcon(props) {
+function HomeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -335,7 +335,7 @@ function HomeIcon(props) {
   );
 }
 
-function InfoIcon(props) {
+function InfoIcon(props: any) {
   return (
     <svg
       {...props}
@@ -356,7 +356,7 @@ function InfoIcon(props) {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: any) {
   return (
     <svg
       {...props}
@@ -377,7 +377,7 @@ function MenuIcon(props) {
   );
 }
 
-function Package2Icon(props) {
+function Package2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -398,7 +398,7 @@ function Package2Icon(props) {
   );
 }
 
-function SearchIcon(props) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -418,7 +418,7 @@ function SearchIcon(props) {
   );
 }
 
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}

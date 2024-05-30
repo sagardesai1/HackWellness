@@ -269,7 +269,7 @@ export default function Component() {
   );
 }
 
-function CalendarIcon(props) {
+function CalendarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -291,7 +291,7 @@ function CalendarIcon(props) {
   );
 }
 
-function ChevronLeftIcon(props) {
+function ChevronLeftIcon(props: any) {
   return (
     <svg
       {...props}
@@ -310,7 +310,7 @@ function ChevronLeftIcon(props) {
   );
 }
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props: any) {
   return (
     <svg
       {...props}
@@ -329,7 +329,7 @@ function ChevronRightIcon(props) {
   );
 }
 
-function CircleCheckIcon(props) {
+function CircleCheckIcon(props: any) {
   return (
     <svg
       {...props}
@@ -349,7 +349,7 @@ function CircleCheckIcon(props) {
   );
 }
 
-function FlameIcon(props) {
+function FlameIcon(props: any) {
   return (
     <svg
       {...props}
@@ -368,7 +368,7 @@ function FlameIcon(props) {
   );
 }
 
-function ListIcon(props) {
+function ListIcon(props: any) {
   return (
     <svg
       {...props}
@@ -392,7 +392,7 @@ function ListIcon(props) {
   );
 }
 
-function MoveHorizontalIcon(props) {
+function MoveHorizontalIcon(props: any) {
   return (
     <svg
       {...props}
@@ -413,7 +413,7 @@ function MoveHorizontalIcon(props) {
   );
 }
 
-function PlusIcon(props) {
+function PlusIcon(props: any) {
   return (
     <svg
       {...props}
@@ -433,7 +433,7 @@ function PlusIcon(props) {
   );
 }
 
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}

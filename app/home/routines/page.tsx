@@ -541,7 +541,7 @@ function Convert() {
 
 export default Convert;
 
-function SearchIcon(props) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -561,7 +561,7 @@ function SearchIcon(props) {
   );
 }
 
-function AirVentIcon(props) {
+function AirVentIcon(props: any) {
   return (
     <svg
       {...props}
@@ -583,7 +583,7 @@ function AirVentIcon(props) {
   );
 }
 
-function BiohazardIcon(props) {
+function BiohazardIcon(props: any) {
   return (
     <svg
       {...props}
@@ -611,7 +611,7 @@ function BiohazardIcon(props) {
   );
 }
 
-function BoneIcon(props) {
+function BoneIcon(props: any) {
   return (
     <svg
       {...props}
@@ -630,7 +630,7 @@ function BoneIcon(props) {
   );
 }
 
-function BrainIcon(props) {
+function BrainIcon(props: any) {
   return (
     <svg
       {...props}
@@ -657,7 +657,7 @@ function BrainIcon(props) {
   );
 }
 
-function DessertIcon(props) {
+function DessertIcon(props: any) {
   return (
     <svg
       {...props}
@@ -678,7 +678,7 @@ function DessertIcon(props) {
   );
 }
 
-function DiamondIcon(props) {
+function DiamondIcon(props: any) {
   return (
     <svg
       {...props}
@@ -697,7 +697,7 @@ function DiamondIcon(props) {
   );
 }
 
-function EarIcon(props) {
+function EarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -717,7 +717,7 @@ function EarIcon(props) {
   );
 }
 
-function EggIcon(props) {
+function EggIcon(props: any) {
   return (
     <svg
       {...props}
@@ -736,7 +736,7 @@ function EggIcon(props) {
   );
 }
 
-function EyeIcon(props) {
+function EyeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -756,7 +756,7 @@ function EyeIcon(props) {
   );
 }
 
-function HeartIcon(props) {
+function HeartIcon(props: any) {
   return (
     <svg
       {...props}
@@ -775,7 +775,7 @@ function HeartIcon(props) {
   );
 }
 
-function LeafIcon(props) {
+function LeafIcon(props: any) {
   return (
     <svg
       {...props}
@@ -795,7 +795,7 @@ function LeafIcon(props) {
   );
 }
 
-function RadiationIcon(props) {
+function RadiationIcon(props: any) {
   return (
     <svg
       {...props}
@@ -817,7 +817,7 @@ function RadiationIcon(props) {
   );
 }
 
-function RecycleIcon(props) {
+function RecycleIcon(props: any) {
   return (
     <svg
       {...props}
@@ -841,7 +841,7 @@ function RecycleIcon(props) {
   );
 }
 
-function ShieldOffIcon(props) {
+function ShieldOffIcon(props: any) {
   return (
     <svg
       {...props}
@@ -862,7 +862,7 @@ function ShieldOffIcon(props) {
   );
 }
 
-function SkullIcon(props) {
+function SkullIcon(props: any) {
   return (
     <svg
       {...props}
@@ -885,7 +885,7 @@ function SkullIcon(props) {
   );
 }
 
-function ChevronDownIcon(props) {
+function ChevronDownIcon(props: any) {
   return (
     <svg
       {...props}
