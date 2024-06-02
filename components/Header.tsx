@@ -12,7 +12,7 @@ async function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900">
-      <nav className="flex flex-col sm:flex-row items-center p-5 pl-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
+      <nav className="flex sm:flex-row items-center p-5 pl-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
         <Logo />
 
         <div className="flex-1 flex items-center justify-end space-x-4">
@@ -29,10 +29,10 @@ async function Header() {
 
           <DarkModeToggle />
           <UserButton session={session} /> */}
-          <div className="flex items-center justify-center gap-x-6">
+          <div className="flex items-center">
             <Link
               href="https://getwaitlist.com/waitlist/17274"
-              className="inline-flex items-center rounded-md bg-indigo-600 px-4 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="inline-flex items-center rounded-md bg-indigo-600 px-2 py-1.5 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Join Waitlist{" "}
               <svg
