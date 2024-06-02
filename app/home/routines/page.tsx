@@ -8,6 +8,7 @@ import AndrewHubermanAvatar from "@/images/AuthorImages/AndrewHuberman.jpg";
 import MaxLugavereAvatar from "@/images/AuthorImages/MaxLugavere.jpeg";
 import DanielAmenAvatar from "@/images/AuthorImages/DanielAmen.webp";
 import MarkHymanAvatar from "@/images/AuthorImages/MarkHyman.jpeg";
+import TimFerrissAvatar from "@/images/AuthorImages/TimFerriss.jpeg";
 
 import { cn } from "@/lib/utils";
 
@@ -74,7 +75,7 @@ function Convert() {
                   className="rounded-full"
                 />
               </Avatar>
-              <h3 className="text-xl font-bold">Fix Rotting Teeth</h3>
+              <h3 className="text-xl font-bold">Reverse Gum Disease</h3>
             </div>
             <div className="flex items-center justify-between mt-2">
               <p className="font-bold">Bryan Johnson</p>
@@ -91,8 +92,11 @@ function Convert() {
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
-                <li>Run your water pik along the gum line and entire teeth.</li>
-                <li>Use a thick expanding floss to ...</li>
+                <li>Use Waterpik along the gum line and around each tooth.</li>
+                <li>
+                  Use DrTungs floss (captures 25% more plaque than thinner
+                  floss).
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -130,8 +134,10 @@ function Convert() {
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
-                <li>Prioritize hydration upon waking.</li>
-                <li>Get sunlight within 1 hour ...</li>
+                <li>Hydrate upon waking with water + LMNT electrolytes.</li>
+                <li>
+                  Get 5-10 mins of direct sunlight within 1 hour of waking.
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -166,14 +172,18 @@ function Convert() {
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              9 evidence based tips to get an amazing night of sleep and feel
-              well rested throughout the day.
+              9 step evening routine to get an amazing night of sleep.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
-                <li>Sleep 7-9 hours each night.</li>
-                <li>Set a regular time to sleep ...</li>
+                <li>
+                  Dim lights (bright lights at night signal sunlight to the body
+                  which triggers ...
+                </li>
+                <li>
+                  Turn on the AC or fan (body temperature needs to decrease ...
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -206,16 +216,16 @@ function Convert() {
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              Blueprint oral care protocol for healthy teeth and gums.
+              Detox protocol for a healthy gut and blood sugar levels.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
+                <li>Brisk walk (or other moderate exercise) for 30 mins.</li>
                 <li>
-                  Remove all bad food and eat real whole food. Understand food
-                  is medicine.
+                  Take Chromium, Zinc, alpha lipoic acid, cinnamon, green tea
+                  catechins, fish oil, vitamin D3 ...
                 </li>
-                <li>Understand the way you eat ...</li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -248,14 +258,19 @@ function Convert() {
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              Dr. Daniel Amen shares tips for a healthy brain and how he
-              maintains his brain health.
+              Tips for maintaining brain health.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
-                <li>Focus on 8 hours of sleep.</li>
-                <li>Put bluelight blockers on ...</li>
+                <li>
+                  Get 7-9 hours of high quality sleep. Increase sleep quality by
+                  taking magnesium threonate, L-theanine, or 5-HTP.
+                </li>
+                <li>
+                  Exercise brain for 15 minutes a day by learning, reading,
+                  playing a musical instrument ...
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -290,17 +305,19 @@ function Convert() {
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              A practical approach to hormone health by focusing on resistance
-              exercises and the order of weight training and cardio exercises.
+              A practical and natural approach to hormone health for men.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
                 <li>
                   Engage in resistance training with major compound movements
-                  like squats, deadlifts, and chin-ups.
+                  like squats, deadlifts, and chin-ups ...
                 </li>
-                <li>Perform six sets of 10 ...</li>
+                <li>
+                  Take tongkat ali, fadogia agrestis, zinc and boron at the
+                  following dosages ...
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -333,15 +350,19 @@ function Convert() {
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              Blueprint anti aging protocol for healthy skin and youthful.
+              Blueprint anti-aging protocol for healthy skin and youthful.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
                 <li>
-                  Wash face with 2% salicylic acid to remove any blemishes.
+                  Wash face with CeraVe (2% salicylic acid) to remove any
+                  blemishes.
                 </li>
-                <li>Mircodose accutane (2 pills twice ...</li>
+                <li>
+                  Apply Adipeau Face Cream (adds fat cells to promote youthful
+                  appearance).
+                </li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
@@ -355,38 +376,36 @@ function Convert() {
             <div className="flex items-center gap-4">
               <Avatar className={cn("bg-white text-black")}>
                 <Image
-                  src={MaxLugavereAvatar}
+                  src={TimFerrissAvatar}
                   alt={"User name"}
                   width={40}
                   height={40}
                   className="rounded-full"
                 />
               </Avatar>
-              <h3 className="text-xl font-bold">Fueling Brain Health</h3>
+              <h3 className="text-xl font-bold">Fueling Productivity</h3>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <p className="font-bold">Max Lugavere</p>
+              <p className="font-bold">Tim Ferriss</p>
               <Badge
                 className="bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-white"
                 variant="outline"
               >
-                Brain
+                Self care
               </Badge>
             </div>
             <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">
-              Genius foods author Max Lugavere reveals his personal daily
-              routine that he takes on the road, his go-to brain-boosting tips,
-              and the foods that help you stay sharp and energized no matter
-              where you are.
+              A daily routine for winning the day and self improvement.
             </p>
             <div className="mt-2">
               <p className="font-semibold">Routine:</p>
               <ul className="list-disc pl-4 text-sm">
+                <li>Practice transcendental meditation for 20 minutes.</li>
                 <li>
-                  Drink mineral water as it contains 4x more calcium and
-                  magnesium.
+                  5 minutes of journaling on the following: Things you’re
+                  grateful for, things that would make the day great, daily
+                  affirmations ...
                 </li>
-                <li>Start morning stretches outside or ...</li>
               </ul>
 
               <p className="text-gray-500 text-sm mt-1 dark:text-gray-400">

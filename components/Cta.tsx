@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Cta() {
   return (
     <div className="mx-auto max-w-7xl pb-32 pt-10 sm:px-6 sm:pb-32 lg:px-8">
@@ -13,18 +15,18 @@ function Cta() {
             work.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
+            <Link
               href="https://getwaitlist.com/waitlist/17274"
-              className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get early access
-            </a>
-            {/* <a
-              href="https://getwaitlist.com/waitlist/17274"
-              className="text-sm font-semibold leading-6"
-            >
-              Learn more <span aria-hidden="true">→</span>
-            </a> */}
+            </Link>
+            {/* <Link
+                href="https://getwaitlist.com/waitlist/17274"
+                className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300"
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </Link> */}
           </div>
         </div>
       </div>

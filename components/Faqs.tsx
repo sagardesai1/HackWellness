@@ -24,9 +24,9 @@ function Faqs() {
                 What is HackWellness?
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                HackWellness is an app that provides 50 science-backed routines,
-                habits from renowned experts, and unbiased supplement
-                recommendations to help you optimize your health and
+                HackWellness is a web based platform that provides
+                science-backed routines from renowned experts and high quality
+                supplement recommendations to help you optimize your health and
                 performance.
               </p>
             </div>
@@ -44,12 +44,12 @@ function Faqs() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Who are the experts behind HackWellness routines?
+                Who are the creators of HackWellness?
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Our routines and habits are based on well-established leaders in
-                the biohacking community, including experts like Bryan Johnson
-                and Andrew Huberman.
+                We are a team of wellness junkies and biohackers who have spent
+                hundreds of hours researching information from experts like
+                Bryan Johnson and Andrew Huberman.
               </p>
             </div>
             <div className="mb-10">
@@ -66,11 +66,11 @@ function Faqs() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                How does HackWellness choose supplements?
+                How does HackWellness choose supplements?{" "}
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We select supplements based solely on scientific research and
-                efficacy, ensuring you receive only the best recommendations.
+                We select supplements based on quality and purity, ensuring you
+                see the best recommendations on the market.
               </p>
               {/* <p className="text-gray-500 dark:text-gray-400">
                 Feel free to{" "}
@@ -104,10 +104,9 @@ function Faqs() {
                 Is HackWellness suitable for beginners?
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Absolutely! HackWellness offers routines and habits for all
-                levels, making it easy for beginners to start optimizing their
-                health and for experienced biohackers to further enhance their
-                performance.
+                Absolutely! HackWellness offers protocols for all levels, making
+                it easy for beginners to start optimizing their health based on
+                their health goals.
               </p>
             </div>
             <div className="mb-10">
@@ -127,9 +126,8 @@ function Faqs() {
                 Can I customize the routines and habits?
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Yes, HackWellness allows you to personalize and tailor the
-                routines and habits to fit your unique lifestyle and goals,
-                ensuring maximum effectiveness.
+                Yes, HackWellness allows you to create your own protocol based
+                on the advice of experts to fit your unique lifestyle and goals.
               </p>
             </div>
             <div className="mb-10">
@@ -146,10 +144,10 @@ function Faqs() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                How often is the content updated?
+                How often is the content updated?{" "}
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We regularly update our library with the latest science-backed
+                We regularly update our library with the latest expert-backed
                 routines, habits, and supplement recommendations to ensure you
                 always have access to the most current and effective
                 information.

@@ -21,16 +21,15 @@ function Hero() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Unlock Your Ultimate Potential
+              Unlock Your Peak Performance
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Join HackWellness to access over 50+ science-backed routines,
-              habits from renowned experts like Bryan Johnson and Andrew
-              Huberman, and premium supplements for optimal health and
-              performance.{" "}
-              <span className="text-indigo-600 dark:text-indigo-500">
+              Access 50+ wellness routines and premium supplement
+              recommendations from renowned biohackers such as Andrew Huberman
+              and Bryan Johnson.{" "}
+              {/* <span className="text-indigo-600 dark:text-indigo-500">
                 Let science optimize your routines.
-              </span>
+              </span> */}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

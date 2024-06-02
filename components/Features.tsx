@@ -5,19 +5,19 @@ const features = [
   {
     name: "Expert-Approved Routines.",
     description:
-      "Follow 50 proven routines designed by top biohacking leaders to elevate your daily performance and well-being.",
+      "Follow 50+ proven routines designed by the world’s leading experts in biohacking to elevate your daily performance and well-being.",
     icon: "CloudArrowUpIcon",
   },
   {
-    name: "Science-Backed Habits.",
+    name: "Thoroughly Researched Supplements.",
     description:
-      "Implement effective habits rooted in scientific research, ensuring you achieve the best possible results.",
+      "Discover clean, high-quality supplements vetted for their purity.",
     icon: "LockClosedIcon",
   },
   {
-    name: "Unbiased Supplement Guidance.",
+    name: "Biohackers Community.",
     description:
-      "Access clean, high-quality supplements chosen solely for their scientific efficacy.",
+      "Join a Discord of like minded individuals who share their insider tips and advice to help you achieve your health goals.",
     icon: "ServerIcon",
   },
 ];
@@ -30,14 +30,14 @@ function Features() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                Optimze now
+                Optimize now
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                A better library
+                Your go-to knowledge hub for all things wellness
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Get access to expert-vetted protocols and supplements for
-                whatever health outcome you desire.
+                We’ve spent hundreds of hours curating protocols and supplements
+                from top biohackers so that you don’t have to.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -58,7 +58,7 @@ function Features() {
           <Image
             src={FeaturesImage}
             alt="Product screenshot"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            className="w-full sm:w-[48rem] md:w-[57rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}
           />

@@ -17,7 +17,7 @@ async function Header() {
 
         <div className="flex-1 flex items-center justify-end space-x-4">
           {/* Language Select */}
-          {session ? (
+          {/* {session ? (
             <>
               <Link href={"/chat"} prefetch={false}>
                 <MessagesSquareIcon className="text-black dark:text-white" />
@@ -28,7 +28,39 @@ async function Header() {
           )}
 
           <DarkModeToggle />
-          <UserButton session={session} />
+          <UserButton session={session} /> */}
+          <div className="flex items-center justify-center gap-x-6">
+            <Link
+              href="https://getwaitlist.com/waitlist/17274"
+              className="inline-flex items-center rounded-md bg-indigo-600 px-4 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Join Waitlist{" "}
+              <svg
+                className="w-6 h-6 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </Link>
+
+            {/* <Link
+                href="https://getwaitlist.com/waitlist/17274"
+                className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300"
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </Link> */}
+          </div>
         </div>
       </nav>
       <UpgradeBanner />

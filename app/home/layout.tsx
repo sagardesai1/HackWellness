@@ -8,6 +8,8 @@ import {
   Card,
   CardFooter,
 } from "@/components/ui/card";
+import { MessageSquareMore, Pill } from "lucide-react";
+
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
 import {
@@ -38,7 +40,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               <Link
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+                className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
                 href="/home/routines"
               >
                 <HomeIcon className="h-4 w-4" />
@@ -52,10 +54,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Habits
               </Link>
               <Link
-                className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
                 href="/home/supplements"
               >
-                <CalendarIcon className="h-4 w-4" />
+                <Pill className="h-4 w-4" />
                 Supplements
               </Link>
               {/* <Link
@@ -69,8 +71,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
                 href="#"
               >
-                <SettingsIcon className="h-4 w-4" />
-                Settings
+                <MessageSquareMore className="h-4 w-4" />
+                Community
               </Link>
             </nav>
           </div>

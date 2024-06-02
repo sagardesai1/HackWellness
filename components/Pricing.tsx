@@ -10,7 +10,7 @@ function Pricing() {
             Pricing
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Simple no-tricks pricing
+            Pay once, own it forever
           </p>
         </div>
         <div className="relative mt-6">
@@ -39,7 +39,7 @@ function Pricing() {
         </div>
       </div>
       <div className="flow-root bg-white pb-24 sm:pb-32">
-        <div className="-mt-80">
+        <div className="-mt-80 px-4 sm:px-6 lg:px-8">
           <PricingCards redirect={true} />
         </div>
       </div>
