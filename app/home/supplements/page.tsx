@@ -102,7 +102,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Having not just Magnesium Threonate, but also 2 other highly
                   bioavailable forms of magnesium ...
@@ -150,7 +150,7 @@ function Convert() {
             <div className="mt-2">
               <p className="font-semibold">Andrew Huberman, Ph.D</p>
               <p className="font-semibold">Bryan Johnson</p>
-              <p className="font-semibold">Peter Atti, MD</p>
+              <p className="font-semibold">Peter Attia, MD</p>
               <a
                 href="#"
                 className="underline text-gray-500 text-sm mt-1 dark:text-gray-400"
@@ -171,7 +171,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Nordic Naturals Omega 3 has one of the highest concentration
                   ...
@@ -250,7 +250,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Pure synergy uses a naturally occurring source of vitamin C
                   which is superior ...
@@ -317,7 +317,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Gaia’s Ashwagandha Root Liquid Phyto-Caps offers the power of
                   a concentrated liquid ...
@@ -379,7 +379,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Ancient Nutrition’s Green powder is certified organic which
                   means ingredients are grown ...
@@ -417,7 +417,7 @@ function Convert() {
               <div className="bg-gray-100 p-3 rounded-full dark:bg-gray-800">
                 <BoneIcon className="w-6 h-6 text-gray-500" />
               </div>
-              <h3 className="text-xl font-bold">Viatmin D + K</h3>
+              <h3 className="text-xl font-bold">Vitamin D + K</h3>
             </div>
             <div className="flex items-center justify-end mt-2">
               <Badge
@@ -449,7 +449,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Therapro vitamin d + k has a liquid liposomal delivery system
                   that makes it ...
@@ -517,10 +517,10 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
-                  Having not just Magnesium Threonate, but also 2 other highly
-                  bioavailable forms of magnesium ...
+                  Garden of Life Turmeric offers a high concentration of
+                  curcuminoids (95%) with a black pepper ...
                 </p>
               </div>
               <p className="text-gray-500 text-sm mt-2 dark:text-gray-400">
@@ -588,7 +588,7 @@ function Convert() {
                 </ul>
               </a>
               <div className="mt-2">
-                <p className="font-semibold text-sm">Scienctific Research</p>
+                <p className="font-semibold text-sm">Scientific rationale</p>
                 <p className="text-sm">
                   Having not just Magnesium Threonate, but also 2 other highly
                   bioavailable forms of magnesium ...
