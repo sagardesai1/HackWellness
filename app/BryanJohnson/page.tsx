@@ -65,7 +65,7 @@ function page() {
             <Link href={"https://amzn.to/4eo1rmv"}>
               <li>Sensodyne Toothpaste</li>
             </Link>
-            <Link href={"https://amzn.to/3VtyGgs"}>
+            <Link href={"https://amzn.to/3VqsjKV"}>
               <li>Dr. Collins Biomin Tooth Sensitivity Toothpaste</li>
             </Link>
             <Link href={"https://amzn.to/4bOeWtL"}>
