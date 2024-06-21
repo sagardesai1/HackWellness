@@ -47,7 +47,7 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
     redirect: async ({ url, baseUrl }) => {
-      return `${baseUrl}/chat`;
+      return `${baseUrl}/home/goals`;
     },
   },
   session: {

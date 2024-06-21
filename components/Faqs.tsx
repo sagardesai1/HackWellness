@@ -25,9 +25,8 @@ function Faqs() {
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 HackWellness is a web based platform that provides
-                science-backed routines from renowned experts and high quality
-                supplement recommendations to help you optimize your health and
-                performance.
+                science-backed protocols from renowned experts to help you
+                optimize your health and performance.
               </p>
             </div>
             <div className="mb-10">
@@ -49,7 +48,7 @@ function Faqs() {
               <p className="text-gray-500 dark:text-gray-400">
                 We are a team of wellness junkies and biohackers who have spent
                 hundreds of hours researching information from experts like
-                Bryan Johnson and Andrew Huberman.
+                Bryan Johnson, Peter Attia and Andrew Huberman.
               </p>
             </div>
             <div className="mb-10">
@@ -104,9 +103,9 @@ function Faqs() {
                 Is HackWellness suitable for beginners?
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Absolutely! HackWellness offers protocols for all levels, making
-                it easy for beginners to start optimizing their health based on
-                their health goals.
+                Absolutely! HackWellness offers protocols for 3 levels
+                (Beginner, Intermediate, and Advanced) making it to start from
+                wherever you are at in your biohacking journey.
               </p>
             </div>
             <div className="mb-10">

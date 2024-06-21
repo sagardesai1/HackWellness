@@ -17,7 +17,7 @@ function Logo() {
             priority
             src={logoNoBackground}
             alt="Anychat logo"
-            className="dark:filter dark:invert"
+            // className="dark:filter dark:invert"
           ></Image>
         </AspectRatio>
       </div>

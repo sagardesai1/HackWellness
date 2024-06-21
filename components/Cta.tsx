@@ -16,10 +16,10 @@ function Cta() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
-              href="https://getwaitlist.com/waitlist/17274"
+              href="/home/goals"
               className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Get early access
+              Get started
             </Link>
             {/* <Link
                 href="https://getwaitlist.com/waitlist/17274"

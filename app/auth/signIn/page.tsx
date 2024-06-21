@@ -94,7 +94,7 @@ function SignIn() {
               Sign up with Google
             </Button>
           </div>
-          <p className="mt-10 text-center text-sm text-gray-500">
+          {/* <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?{" "}
             <a
               href="#"
@@ -102,7 +102,7 @@ function SignIn() {
             >
               Start a 14 day free trial
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </>

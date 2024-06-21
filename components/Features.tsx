@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const features = [
   {
-    name: "Expert-Approved Routines.",
+    name: "Expert-Backed Suggestions.",
     description:
-      "Follow 50+ proven routines designed by the world’s leading experts in biohacking to elevate your daily performance and well-being.",
+      "Discover habits practiced by the world’s leading experts in biohacking.",
     icon: "CloudArrowUpIcon",
   },
   {
-    name: "Thoroughly Researched Supplements.",
+    name: "Build Your Routine.",
     description:
-      "Discover clean, high-quality supplements vetted for their purity.",
+      "Curate your own protocol to elevate your daily performance and well-being.",
     icon: "LockClosedIcon",
   },
   {
@@ -36,8 +36,8 @@ function Features() {
                 Your go-to knowledge hub for all things wellness
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                We’ve spent hundreds of hours curating protocols and supplements
-                from top biohackers so that you don’t have to.
+                We’ve spent hundreds of hours curating protocols and tips from
+                top biohackers so that you don’t have to.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

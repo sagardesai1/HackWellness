@@ -24,19 +24,18 @@ function Hero() {
               Unlock Your Peak Performance
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Access 50+ wellness routines and premium supplement
-              recommendations from renowned biohackers such as Andrew Huberman
-              and Bryan Johnson.{" "}
+              Build your personalized protocol based on the advice of renowned
+              biohackers like Andrew Huberman, Bryan Johnson, and Peter Attia.{" "}
               {/* <span className="text-indigo-600 dark:text-indigo-500">
                 Let science optimize your routines.
               </span> */}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                href="https://getwaitlist.com/waitlist/17274"
+                href="/home/goals"
                 className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get early access
+                Get started
               </Link>
               {/* <Link
                 href="https://getwaitlist.com/waitlist/17274"
