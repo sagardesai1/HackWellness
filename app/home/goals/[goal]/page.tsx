@@ -40,7 +40,7 @@ interface Goal {
   habits: Habit[];
 }
 
-const page = ({ params, searchParams }: any) => {
+const Goal = ({ params, searchParams }: any) => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [goalData, setGoalData] = useState<Goal | null>(null);
   const [selectedSkillLevels, setSelectedSkillLevels] = useState<
@@ -264,4 +264,4 @@ const page = ({ params, searchParams }: any) => {
   );
 };
 
-export default page;
+export default Goal;
