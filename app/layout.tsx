@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <ClientProviders>
       <Script
-        id="google-analytics"
+        id="google-analytics-tagmanger"
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANAYLITCS_ID}`}
       ></Script>
-      <Script>
+      <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
