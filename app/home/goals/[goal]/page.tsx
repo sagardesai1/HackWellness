@@ -259,9 +259,11 @@ const Goal = ({ params, searchParams }: any) => {
                       habit: skillLevel.details,
                     })
                   )}
-                  onSelectionChange={(selectedSkillLevel) =>
-                    handleSelectionChange(habit.id, selectedSkillLevel)
-                  }
+                  onSelectionChange={(selectedSkillLevel) => {
+                    if (selectedSkillLevel !== null) {
+                      handleSelectionChange(habit.id, selectedSkillLevel);
+                    }
+                  }}
                 />
               </div>
               <div className="">
