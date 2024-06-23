@@ -22,6 +22,7 @@ function UserButton({ session }: { session: Session | null }) {
   if (!session)
     return (
       <Button
+        id="SignInButton"
         className={"border-0"}
         variant={"outline"}
         onClick={() => signIn()}

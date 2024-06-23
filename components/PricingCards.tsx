@@ -22,11 +22,11 @@ const tiers = [
     name: "Lifetime membership",
     id: "lifetime",
     href: "#",
-    priceMonthly: "$49",
+    priceMonthly: "$29",
     description: "Limited time early access discount",
     features: [
-      "Explore Proven Routines and Habits",
-      "Vetted Supplement Recommendations",
+      "Explore Proven Habits",
+      "Vetted Expert Recommendations",
       "Verified Source Citations",
       "Exclusive Discord Community Access",
       "Lifetime Updates",
@@ -57,7 +57,7 @@ function PricingCards({ redirect }: { redirect: boolean }) {
                 {tier.priceMonthly ? (
                   <>
                     <span className="line-through text-xl font-semibold leading-7 text-gray-600">
-                      $99
+                      $49
                     </span>
                     <span className="text-5xl font-bold tracking-tight text-gray-900">
                       {tier.priceMonthly}
@@ -92,7 +92,7 @@ function PricingCards({ redirect }: { redirect: boolean }) {
                 href="https://getwaitlist.com/waitlist/17274"
                 className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointed disabled:opacity-80"
               >
-                Get early access
+                Get started
               </Link>
             ) : (
               tier.id && <CheckoutButton />

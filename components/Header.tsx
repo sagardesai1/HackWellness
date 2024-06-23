@@ -4,8 +4,17 @@ import UserButton from "./UserButton";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import Link from "next/link";
-import { MessagesSquareIcon } from "lucide-react";
+import {
+  ChevronLeftCircleIcon,
+  ChevronRight,
+  MenuIcon,
+  MessagesSquareIcon,
+  Trophy,
+} from "lucide-react";
 import UpgradeBanner from "./UpgradeBanner";
+import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 async function Header() {
   const session = await getServerSession(authOptions);
@@ -27,13 +36,13 @@ async function Header() {
           )}
 
           <DarkModeToggle /> */}
-          <UserButton session={session} />
-          <div className="flex items-center">
+          <div className="hidden md:flex space-x-4">
+            <UserButton session={session} />
             <Link
-              href={"/home/goals"}
+              href="/home/goals"
               className="inline-flex items-center rounded-3xl bg-indigo-600 px-3 py-2 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Dashboard{" "}
+              Dashboard
               <svg
                 className="w-6 h-6 text-white dark:text-gray-800"
                 aria-hidden="true"
@@ -52,6 +61,44 @@ async function Header() {
                 />
               </svg>
             </Link>
+          </div>
+          {/* Show the menu button on small screens */}
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button
+                  className="shrink-0 md:hidden"
+                  size="icon"
+                  variant="outline"
+                >
+                  <MenuIcon className="h-5 w-5" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent className="flex flex-col">
+                <nav className="grid gap-2 text-lg font-medium">
+                  <div className="mb-2 pb-6 border-b">
+                    <Logo />
+                  </div>
+                  <div className="space-y-6 mt-4">
+                    <Link
+                      href="/home/goals"
+                      className="flex items-center justify-between space-x-2"
+                    >
+                      <span>Dashbord</span>
+                      <ChevronRight className="w-5 h-5" />
+                    </Link>
+                    <Link
+                      href="/home/goals"
+                      className="flex items-center justify-between space-x-2"
+                    >
+                      <span>Sign in</span>
+                      <ChevronRight className="w-5 h-5" />
+                    </Link>
+                  </div>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </nav>

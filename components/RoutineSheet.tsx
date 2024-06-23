@@ -46,7 +46,7 @@ const RoutineSheet: React.FC<RoutineSheetProps> = ({
       );
       const newRoutineRef = await addDoc(routinesCollectionRef, {
         title: routineTitle,
-        skillLevels: selectedSkillLevels,
+        habits: selectedSkillLevels,
         createdAt: serverTimestamp(),
       });
       console.log("Document written with ID: ", newRoutineRef.id);

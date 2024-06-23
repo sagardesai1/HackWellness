@@ -8,7 +8,7 @@ interface SkillLevelData {
 
 interface SkillTableProps {
   data: SkillLevelData[];
-  onSelectionChange: (selectedSkillLevel: string) => void;
+  onSelectionChange: (selectedSkillLevel: string | null) => void;
 }
 
 const SkillTable: React.FC<SkillTableProps> = ({ data, onSelectionChange }) => {
@@ -17,13 +17,13 @@ const SkillTable: React.FC<SkillTableProps> = ({ data, onSelectionChange }) => {
       <div className="min-w-full border border-separate rounded-lg">
         <div className="bg-gray-100">
           <div className="flex">
-            <div className="px-6 py-3 w-1/6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <div className="px-6 py-3 w-1/4 sm:w-1/6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
               Skill Level
             </div>
-            <div className="px-6 py-3 w-2/3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <div className="px-6 py-3 w-1/2 sm:w-2/3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
               Habit
             </div>
-            <div className="px-6 py-3 w-1/6 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <div className="px-6 py-3 w-1/4 sm:w-1/6 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
               Selection
             </div>
           </div>
@@ -31,13 +31,13 @@ const SkillTable: React.FC<SkillTableProps> = ({ data, onSelectionChange }) => {
         <RadioGroup defaultValue="none" onValueChange={onSelectionChange}>
           {data.map((row, index) => (
             <div key={index} className="flex bg-white border-b">
-              <div className="px-6 py-4 w-1/6 text-sm font-medium text-gray-900">
+              <div className="px-6 py-4 w-1/4 sm:w-1/6 text-sm font-medium text-gray-900">
                 {row.skillLevel}
               </div>
-              <div className="px-6 py-4 w-2/3 text-sm text-gray-700">
+              <div className="px-6 py-4 w-1/2 sm:w-2/3 text-sm text-gray-700">
                 {row.habit}
               </div>
-              <div className="px-6 py-4 w-1/6 text-center">
+              <div className="px-6 py-4 w-1/4 sm:w-1/6 text-center">
                 <RadioGroupItem
                   id={`radio-${index}`}
                   value={row.skillLevel.toLowerCase()}

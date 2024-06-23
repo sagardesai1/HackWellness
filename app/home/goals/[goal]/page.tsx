@@ -12,7 +12,10 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import SkillTable from "@/components/SkillTable";
 import { fetchGoalByTitle } from "@/database";
 import RoutineSheet from "@/components/RoutineSheet";
-import { CircleCheck } from "lucide-react";
+import { Check, X, CircleCheck } from "lucide-react";
+import Loading from "@/components/Loading";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 interface SkillLevel {
   skillLevel: string;
@@ -24,6 +27,11 @@ interface Author {
   tip: string;
 }
 
+interface Myth {
+  myth: string;
+  rebuttal: string;
+}
+
 interface Habit {
   id: string;
   title: string;
@@ -32,6 +40,7 @@ interface Habit {
   resourceLinks: string[];
   videoLinks: string[];
   authors: Author[];
+  myths: Myth[];
 }
 
 interface Goal {
@@ -147,14 +156,7 @@ const Goal = ({ params, searchParams }: any) => {
   };
 
   if (!goalData) {
-    return (
-      <div className="flex h-screen w-full items-center justify-center">
-        <div className="flex flex-col items-center space-y-4">
-          <div className="animate-spin rounded-full border-4 border-gray-300 border-t-gray-900 h-12 w-12" />
-          <p className="text-gray-500 dark:text-gray-400">Loading...</p>
-        </div>
-      </div>
-    );
+    return <Loading />;
   }
 
   return (
@@ -178,13 +180,13 @@ const Goal = ({ params, searchParams }: any) => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-3">
+                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
                   Tips from experts
                 </p>
                 <div className="space-y-4">
                   {habit.authors.map((author, authorIndex) => (
-                    <div key={authorIndex} className="flex space-x-4 px-4">
-                      <Avatar className={cn("bg-white text-black size-6 mt-1")}>
+                    <div key={authorIndex} className="flex space-x-8 px-4">
+                      <Avatar className={cn("bg-white text-black size-9 mt-1")}>
                         <Image
                           src={getAvatarImage(author.author)}
                           alt={author.author}
@@ -198,6 +200,51 @@ const Goal = ({ params, searchParams }: any) => {
                         <p className="text-gray-500 italic">"{author.tip}"</p>
                         <div className="flex space-x-3">
                           <p className="font-semibold">- {author.author}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
+                  Common Myths
+                </p>
+                <div className="space-y-4">
+                  {habit.myths.map((myth, mythIndex) => (
+                    <div key={mythIndex} className="flex space-x-4 px-4">
+                      <div className="flex flex-col space-y-2">
+                        <div className="flex items-center space-x-2">
+                          <Badge
+                            variant="outline"
+                            className="relative flex items-center gap-2 bg-red-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
+                          >
+                            <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-red-600/50 border-4 border-red-500">
+                              <X className="w-5 h-5 text-red-500" />
+                            </div>
+                            <p className="tracking-wide font-md w-14 text-center">
+                              MYTH
+                            </p>{" "}
+                            {/* Set fixed width and centered text */}
+                          </Badge>
+                          <p className="font-semibold pl-6">{myth.myth}</p>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Badge
+                            variant="outline"
+                            className="relative flex items-center gap-2 bg-green-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
+                          >
+                            <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-green-600/50 border-4 border-green-500">
+                              <Check className="w-5 h-5 text-green-500" />
+                            </div>
+                            <p className="tracking-wide font-md w-14 text-center">
+                              FACT
+                            </p>{" "}
+                            {/* Set fixed width and centered text */}
+                          </Badge>
+                          <p className="font-md text-gray-500 pl-6">
+                            {myth.rebuttal}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -218,7 +265,7 @@ const Goal = ({ params, searchParams }: any) => {
                 />
               </div>
               <div className="">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-1">
+                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-2">
                   References
                 </p>
                 <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -228,7 +275,7 @@ const Goal = ({ params, searchParams }: any) => {
                 </div>
               </div>
               <div className="">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-3">
+                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
                   Links
                 </p>
                 <ul className="mt-1 list-disc px-8 text-sm underline space-y-2">
@@ -252,10 +299,16 @@ const Goal = ({ params, searchParams }: any) => {
               className="flex shadow-lg fixed top-20 right-3 items-center space-x-2 p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
               role="alert"
             >
-              <CircleCheck className="w-6 h-6 text-green-800" />
-              <p className="font-medium">
-                Your routine has been saved successfully under "Routines" tab.
-              </p>
+              <CircleCheck className="w-5 h-5 text-green-800" />
+              <div className="flex items-center">
+                <p className="font-medium">
+                  Your routine has been saved successfully under&nbsp;
+                </p>
+
+                <Link href={"/home/routines"}>
+                  <p className="font-medium underline">Routines tab.</p>
+                </Link>
+              </div>
             </div>
           )}
         </>

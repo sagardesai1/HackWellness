@@ -10,6 +10,11 @@ interface Author {
   tip: string;
 }
 
+interface Myth {
+  myth: string;
+  rebuttal: string;
+}
+
 interface Habit {
   id: string;
   title: string;
@@ -18,6 +23,7 @@ interface Habit {
   resourceLinks: string[];
   videoLinks: string[];
   authors: Author[];
+  myths: Myth[];
 }
 
 interface Goal {
@@ -78,6 +84,15 @@ export const fetchGoalByTitle = async (
           id: authorDoc.id,
           author: authorDoc.data().author,
           tip: authorDoc.data().tip,
+        }));
+
+        // Fetch myths subcollection for each habit
+        const mythsCollection = collection(habitDoc.ref, "myths");
+        const mythssSnapshot = await getDocs(mythsCollection);
+        habit.myths = mythssSnapshot.docs.map((mythDoc) => ({
+          id: mythDoc.id,
+          myth: mythDoc.data().myth,
+          rebuttal: mythDoc.data().rebuttal,
         }));
 
         return habit;
