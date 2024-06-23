@@ -66,6 +66,7 @@ export const fetchGoalByTitle = async (
           resourceLinks: habitDoc.data().resourceLinks,
           videoLinks: habitDoc.data().videoLinks,
           authors: [],
+          myths: [],
         };
 
         // Fetch skillLevels subcollection for each habit
