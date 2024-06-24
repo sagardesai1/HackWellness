@@ -65,11 +65,13 @@ function Faqs() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                How does HackWellness choose supplements?{" "}
+                Do you offer 1:1 health coaching?{" "}
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We select supplements based on quality and purity, ensuring you
-                see the best recommendations on the market.
+                No we don’t currently offer 1:1 health coaching, but we will be
+                launching an AI protocol builder soon that can help you get even
+                more personalized protocols and help you the develop habits you
+                need to achieve your health goals.
               </p>
               {/* <p className="text-gray-500 dark:text-gray-400">
                 Feel free to{" "}

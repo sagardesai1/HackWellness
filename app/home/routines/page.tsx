@@ -27,6 +27,14 @@ const Routines: React.FC = () => {
   const { data: session } = useSession();
   const [routines, setRoutines] = useState<Routine[]>([]);
   const [loading, setLoading] = useState(true);
+  const [notification, setNotification] = useState<string | null>(null);
+
+  const handleButtonClick = () => {
+    setNotification(
+      'Feature is coming soon! Send us any feature requests in "Support" tab.'
+    );
+    setTimeout(() => setNotification(null), 5000); // Hide notification after 3 seconds
+  };
 
   useEffect(() => {
     const fetchRoutines = async () => {
@@ -84,6 +92,14 @@ const Routines: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 p-10">
+      {notification && (
+        <div
+          className="flex shadow-lg fixed top-13 right-8 items-center p-4 text-sm text-green-800 rounded-lg bg-green-50"
+          role="alert"
+        >
+          {notification}
+        </div>
+      )}
       {routines.map((routine) => (
         <div
           key={routine.id}
@@ -94,7 +110,7 @@ const Routines: React.FC = () => {
             {routine.habits.map((habit, index) => (
               <div key={index}>
                 <p className="font-bold text-lg">Habit {index + 1}</p>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
                   {habit.skillLevel.details}
                 </p>
               </div>
@@ -102,11 +118,11 @@ const Routines: React.FC = () => {
           </div>
           <div className="flex justify-end mt-4">
             <Button
-              id="OptimizeAIButton"
               className="flex items-center gap-1 rounded-3xl shadow-lg bg-indigo-500 hover:bg-indigo-300"
+              onClick={handleButtonClick}
             >
-              <Sparkles className="w-4 h-4" />
-              <p className="font-md">Optimize with AI</p>
+              <Sparkles className="w-4 h-4 dark:text-white" />
+              <p className="font-md dark:text-white">Optimize with AI</p>
             </Button>
           </div>
         </div>

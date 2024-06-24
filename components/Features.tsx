@@ -1,4 +1,4 @@
-import FeaturesImage from "@/images/landingpage/DarkSupplementsZoomedScreenshot.png";
+import FeaturesImage from "@/images/landingpage/faq-image.png";
 import Image from "next/image";
 
 const features = [
