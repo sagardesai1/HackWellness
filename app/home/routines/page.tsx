@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, setDoc } from "firebase/firestore";
 import { db } from "@/firebase";
 import { Button } from "@/components/ui/button";
 import Loading from "@/components/Loading";
@@ -29,11 +29,31 @@ const Routines: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [notification, setNotification] = useState<string | null>(null);
 
-  const handleButtonClick = () => {
-    setNotification(
-      'Feature is coming soon! Send us any feature requests in "Support" tab.'
-    );
-    setTimeout(() => setNotification(null), 5000); // Hide notification after 3 seconds
+  const handleButtonClick = async () => {
+    if (!session) return;
+
+    try {
+      const userClicksRef = doc(db, "buttonClicks", session.user.id);
+      const userClicksDoc = await getDoc(userClicksRef);
+
+      if (userClicksDoc.exists()) {
+        const newCount = userClicksDoc.data().count + 1;
+        await setDoc(
+          userClicksRef,
+          { count: newCount, email: session.user.email },
+          { merge: true }
+        );
+      } else {
+        await setDoc(userClicksRef, { count: 1, email: session.user.email });
+      }
+
+      setNotification(
+        'Feature is coming soon! Send us any feature requests in "Support" tab.'
+      );
+      setTimeout(() => setNotification(null), 5000); // Hide notification after 5 seconds
+    } catch (error) {
+      console.error("Error updating click count:", error);
+    }
   };
 
   useEffect(() => {
