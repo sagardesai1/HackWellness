@@ -36,6 +36,9 @@ async function Header() {
           )}
 
           <DarkModeToggle /> */}
+          <Button className={"border-0"} variant={"outline"}>
+            <Link href={"/experts/AndrewHuberman"}>Expert Routines </Link>
+          </Button>
           <div className="hidden md:flex space-x-4">
             <UserButton session={session} />
             <Link
