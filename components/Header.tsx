@@ -36,10 +36,11 @@ async function Header() {
           )}
 
           <DarkModeToggle /> */}
-          <Button className={"border-0"} variant={"outline"}>
-            <Link href={"/experts/AndrewHuberman"}>Expert Routines </Link>
-          </Button>
+
           <div className="hidden md:flex space-x-4">
+            <Button className={"border-0"} variant={"outline"}>
+              <Link href={"/experts/AndrewHuberman"}>Expert Routines</Link>
+            </Button>
             <UserButton session={session} />
             <Link
               href="/home/goals"
@@ -96,6 +97,13 @@ async function Header() {
                       className="flex items-center justify-between space-x-2"
                     >
                       <span>Sign in</span>
+                      <ChevronRight className="w-5 h-5" />
+                    </Link>
+                    <Link
+                      href="/experts/AndrewHuberman"
+                      className="flex items-center justify-between space-x-2"
+                    >
+                      <span>Expert Routines</span>
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                   </div>
