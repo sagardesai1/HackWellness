@@ -89,10 +89,10 @@ function PricingCards({ redirect }: { redirect: boolean }) {
             </div>
             {redirect ? (
               <Link
-                href="https://getwaitlist.com/waitlist/17274"
+                href="/home/goals"
                 className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointed disabled:opacity-80"
               >
-                Get started
+                Get free access
               </Link>
             ) : (
               tier.id && <CheckoutButton />
