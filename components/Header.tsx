@@ -39,7 +39,7 @@ async function Header() {
 
           <div className="hidden md:flex space-x-4">
             <Button className={"border-0"} variant={"outline"}>
-              <Link href={"/experts/AndrewHuberman"}>Expert Routines</Link>
+              <Link href={"/experts"}>Experts</Link>
             </Button>
             <UserButton session={session} />
             <Link
@@ -100,10 +100,10 @@ async function Header() {
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                     <Link
-                      href="/experts/AndrewHuberman"
+                      href="/experts"
                       className="flex items-center justify-between space-x-2"
                     >
-                      <span>Expert Routines</span>
+                      <span>Experts</span>
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                   </div>

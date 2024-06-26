@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
-      <div className="relative flex justify-end mr-20 mt-10">
+      {/* <div className="relative flex justify-end mr-20 mt-10">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">Explore</Button>
@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-      </div>
+      </div> */}
       {children}
     </div>
   );
