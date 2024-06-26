@@ -30,11 +30,11 @@ function page() {
               </div>
             </div>
           </header>
-          <h1 className="mb-4 mt-10 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+          <h1 className="mt-8 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
             Andrew Huberman’s Workout Routine
           </h1>
 
-          <div className="mt-20">
+          <div className="mt-16">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 1: Long Endurance Workout
             </p>
