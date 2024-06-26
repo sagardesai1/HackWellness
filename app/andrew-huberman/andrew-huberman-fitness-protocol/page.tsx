@@ -33,7 +33,12 @@ function page() {
           <h1 className="mt-8 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
             Andrew Huberman’s Workout Routine
           </h1>
-
+          <p className="text-lg leading-8 text-gray-600">
+            Andrew Huberman’s Foundational Fitness protocol is designed to help
+            you achieve your fitness goals efficiently. He’s been following this
+            protocol for over 20 years. Here's a breakdown of how you can
+            implement this protocol into your routine:
+          </p>
           <div className="mt-16">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 1: Long Endurance Workout

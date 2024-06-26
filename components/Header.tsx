@@ -53,7 +53,7 @@ async function Header() {
                     <ul className="p-4 space-y-2 md:w-[200px] lg:w-[250px]">
                       <NavigationMenuLink asChild>
                         <a
-                          href={"andrew-huberman"}
+                          href={"/andrew-huberman"}
                           className={cn(
                             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
@@ -65,7 +65,7 @@ async function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a
-                          href={"bryan-johnson"}
+                          href={"/bryan-johnson"}
                           className={cn(
                             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
@@ -77,7 +77,7 @@ async function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a
-                          href={"jeff-nippard"}
+                          href={"/jeff-nippard"}
                           className={cn(
                             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
@@ -89,7 +89,7 @@ async function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a
-                          href={"peter-attia"}
+                          href={"/peter-attia"}
                           className={cn(
                             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}

@@ -12,7 +12,7 @@ const AndrewHubermanPosts: Post[] = [
     href: "andrew-huberman/andrew-huberman-fitness-protocol",
     component: "AndrewHubermanFitnessProtocol",
     description:
-      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+      "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: "Fitness",
@@ -23,7 +23,7 @@ const AndrewHubermanPosts: Post[] = [
     href: "andrew-huberman/andrew-huberman-quickly-improve-focus",
     component: "AndrewHubermanQuicklyImproveFocus",
     description:
-      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+      "How to quickly improve focus. The key principal is mental focus follows visual focus.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: "Mental Health",
