@@ -4,17 +4,24 @@ import UserButton from "./UserButton";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import Link from "next/link";
+import { ChevronDown, ChevronRight, MenuIcon } from "lucide-react";
 import {
-  ChevronLeftCircleIcon,
-  ChevronRight,
-  MenuIcon,
-  MessagesSquareIcon,
-  Trophy,
-} from "lucide-react";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+
 import UpgradeBanner from "./UpgradeBanner";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import React from "react";
+import { cn } from "@/lib/utils";
 
 async function Header() {
   const session = await getServerSession(authOptions);
@@ -38,9 +45,66 @@ async function Header() {
           <DarkModeToggle /> */}
 
           <div className="hidden md:flex space-x-4">
-            <Button className={"border-0"} variant={"outline"}>
-              <Link href={"/experts"}>Experts</Link>
-            </Button>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Experts</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="p-4 space-y-2 md:w-[200px] lg:w-[250px]">
+                      <NavigationMenuLink asChild>
+                        <a
+                          href={"andrew-huberman"}
+                          className={cn(
+                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          )}
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Andrew Huberman
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a
+                          href={"bryan-johnson"}
+                          className={cn(
+                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          )}
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Bryan Johnson
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a
+                          href={"jeff-nippard"}
+                          className={cn(
+                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          )}
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Jeff Nippard
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a
+                          href={"peter-attia"}
+                          className={cn(
+                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          )}
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Peter Attia
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <UserButton session={session} />
             <Link
               href="/home/goals"
@@ -99,13 +163,14 @@ async function Header() {
                       <span>Sign in</span>
                       <ChevronRight className="w-5 h-5" />
                     </Link>
-                    <Link
-                      href="/experts"
-                      className="flex items-center justify-between space-x-2"
-                    >
+                    <div className="flex items-center justify-between space-x-2">
                       <span>Experts</span>
-                      <ChevronRight className="w-5 h-5" />
-                    </Link>
+
+                      <ChevronDown className="w-5 h-5" />
+                      {/* <div className="flex flex-col">
+                        <Link href={""}>s</Link>
+                      </div> */}
+                    </div>
                   </div>
                 </nav>
               </SheetContent>
