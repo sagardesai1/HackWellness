@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AndrewHubermanImage from "@/images/AuthorImages/AndrewHuberman.jpg";
+import PeterAttiaImage from "@/images/AuthorImages/PeterAttia.jpeg";
 import { Post } from "@/types/Post";
 import Link from "next/link";
 
@@ -7,18 +7,10 @@ const posts: Post[] = [
   {
     id: 1,
     title: "Fitness Protocol",
-    href: "andrew-huberman/andrew-huberman-fitness-protocol",
+    href: "peter-attia/peter-attia-fitness-protocol",
     description:
-      "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years.",
+      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
     category: "Fitness",
-  },
-  {
-    id: 2,
-    title: "Quickly Improve Focus",
-    href: "andrew-huberman/andrew-huberman-quickly-improve-focus",
-    description:
-      "How to quickly improve focus. The key principal is mental focus follows visual focus.",
-    category: "Mental Health",
   },
 
   // More posts...
@@ -30,13 +22,16 @@ export default function Example() {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 flex flex-row space-x-12 items-center">
           <Image
-            src={AndrewHubermanImage}
+            src={PeterAttiaImage}
             alt=""
-            className="h-24 w-24 rounded-full bg-gray-50 "
+            className="h-24 w-24 rounded-full overflow-hidden bg-gray-50 "
+            style={{
+              objectFit: "cover",
+            }}
           />
           <div className="flex flex-col ">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Articles on Andrew Huberman
+              Articles on Peter Attia
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Learn how to elevate your routines with expert advice.

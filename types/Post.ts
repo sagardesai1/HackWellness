@@ -13,9 +13,6 @@ export interface Post {
   id: number;
   title: string;
   href: string;
-  component: string;
   description: string;
-  date: string;
-  datetime: string;
   category: string;
 }
