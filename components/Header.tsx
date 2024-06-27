@@ -178,7 +178,7 @@ async function Header() {
           </div>
         </div>
       </nav>
-      <UpgradeBanner />
+      {/* <UpgradeBanner /> */}
     </header>
   );
 }
