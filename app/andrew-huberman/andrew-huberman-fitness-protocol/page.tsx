@@ -1,6 +1,8 @@
 import React from "react";
 import AndrewHubermanAvatar from "@/images/AuthorImages/AndrewHuberman.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 function page() {
   return (
@@ -266,6 +268,15 @@ function page() {
             >
               https://www.hubermanlab.com/newsletter/foundational-fitness-protocol
             </a>
+          </div>
+          <div className="mt-28 flex items-center justify-center gap-x-6">
+            <Link
+              href="/"
+              className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Start Building Your Protocol Now
+              <ChevronRight className="w-5 h-5" />
+            </Link>
           </div>
         </article>
       </div>

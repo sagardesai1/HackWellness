@@ -11,6 +11,7 @@ import {
   EarthLock,
   ListTodo,
   Telescope,
+  ChevronRight,
 } from "lucide-react";
 
 function page() {
@@ -179,9 +180,10 @@ function page() {
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link
             href="/"
-            className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Learn more about Hack Wellness
+            Start Building Your Protocol Now
+            <ChevronRight className="w-5 h-5" />
           </Link>
         </div>
       </div>
