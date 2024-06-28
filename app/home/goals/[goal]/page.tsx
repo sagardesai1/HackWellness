@@ -251,20 +251,44 @@ const Goal = ({ params, searchParams }: any) => {
                   ))}
                 </div>
               </div>
-              <div className="">
-                <SkillTable
-                  data={sortSkillLevels(habit.skillLevels).map(
-                    (skillLevel) => ({
-                      skillLevel: skillLevel.skillLevel,
-                      habit: skillLevel.details,
-                    })
-                  )}
-                  onSelectionChange={(selectedSkillLevel) => {
-                    if (selectedSkillLevel !== null) {
-                      handleSelectionChange(habit.id, selectedSkillLevel);
-                    }
-                  }}
-                />
+              <div className="pt-10">
+                <div className="absolute z-10 right-0 -mt-10 flex">
+                  <span className="font-bold text-black text-lg">
+                    Start tracking now
+                  </span>
+                  <svg
+                    width="120"
+                    height="120"
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transform rotate-90"
+                  >
+                    <path
+                      d="M10 80 C 40 10, 65 10, 95 80"
+                      stroke="black"
+                      strokeWidth="4"
+                      fill="transparent"
+                    />
+                    <polygon points="95,85 85,75 100,75" fill="black" />
+                  </svg>
+                </div>
+                <div className="relative">
+                  <div>
+                    <SkillTable
+                      data={sortSkillLevels(habit.skillLevels).map(
+                        (skillLevel) => ({
+                          skillLevel: skillLevel.skillLevel,
+                          habit: skillLevel.details,
+                        })
+                      )}
+                      onSelectionChange={(selectedSkillLevel) => {
+                        if (selectedSkillLevel !== null) {
+                          handleSelectionChange(habit.id, selectedSkillLevel);
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
               <div className="">
                 <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-2">
