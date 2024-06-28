@@ -51,11 +51,16 @@ function page() {
                 <li className="mb-2">
                   <span className="font-semibold text-black">Stability:</span>{" "}
                   <span className="text-gray-600">
-                    Should you decide to change the days in the above workout
-                    schedule, it is important to note that ice baths can prevent
-                    gains from that day's workout. As a result, it's best to
-                    avoid ice baths immediately after resistance training.
-                    According Andrew Huberman, saunas do not have this issue.
+                    Daily training to enhance stability. Peter Attia uses a
+                    technique known as{" "}
+                    <a
+                      target="_blank"
+                      href={"https://www.rehabps.com/"}
+                      className="underline"
+                    >
+                      Dynamic Neuromuscular Stabilization (DNS)
+                    </a>{" "}
+                    for this. Yoga and pilates are good alternatives to DNS.
                   </span>
                 </li>
                 <li className="mb-2">

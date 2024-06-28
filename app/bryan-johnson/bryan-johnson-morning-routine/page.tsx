@@ -235,6 +235,22 @@ function page() {
               before.
             </p>
           </div>
+          <div className="mt-20">
+            <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
+              Sources
+            </p>
+            <ul className="list-disc pl-5 mt-2">
+              <li className="mt-1">
+                <a
+                  target="_blank"
+                  href={"https://www.youtube.com/watch?v=OJZ4pjzwDLU"}
+                  className="underline text-lg leading-8 text-gray-600"
+                >
+                  https://www.youtube.com/watch?v=OJZ4pjzwDLU
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className="mt-28 flex items-center justify-center gap-x-6">
             <Link
               href="/"
