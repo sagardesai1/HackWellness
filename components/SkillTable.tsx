@@ -30,18 +30,18 @@ const SkillTable: React.FC<SkillTableProps> = ({ data, onSelectionChange }) => {
         </div>
         <RadioGroup defaultValue="none" onValueChange={onSelectionChange}>
           {data.map((row, index) => (
-            <div key={index} className="flex bg-white border-b">
-              <div className="px-6 py-4 w-1/4 sm:w-1/6 text-sm font-medium text-gray-900">
+            <div key={index} className="flex bg-white border-b items-center">
+              <div className="px-6 py-4 w-1/4 sm:w-1/6 text-md capitalize font-medium text-gray-900">
                 {row.skillLevel}
               </div>
-              <div className="px-6 py-4 w-1/2 sm:w-2/3 text-sm text-gray-700">
+              <div className="px-6 py-4 w-1/2 sm:w-2/3 text-md text-gray-700">
                 {row.habit}
               </div>
               <div className="px-6 py-4 w-1/4 sm:w-1/6 text-center">
                 <RadioGroupItem
                   id={`radio-${index}`}
                   value={row.skillLevel.toLowerCase()}
-                  className="text-indigo-600 data-[state=unchecked]:border-gray-400 data-[state=checked]:border-indigo-600"
+                  className="text-indigo-600 data-[state=unchecked]:border-gray-400 data-[state=checked]:border-indigo-600 h-5 w-5"
                 />
               </div>
             </div>

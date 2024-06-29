@@ -11,8 +11,22 @@ import { cn } from "@/lib/utils";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import SkillTable from "@/components/SkillTable";
 import { fetchGoalByTitle } from "@/database";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import RoutineSheet from "@/components/RoutineSheet";
-import { Check, X, CircleCheck, CornerRightDown } from "lucide-react";
+import {
+  Check,
+  X,
+  CircleCheck,
+  CornerRightDown,
+  ChevronDown,
+  ChevronUp,
+  Plus,
+} from "lucide-react";
 import Loading from "@/components/Loading";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
@@ -50,6 +64,16 @@ interface Goal {
 }
 
 const Goal = ({ params, searchParams }: any) => {
+  const [visibleSections, setVisibleSections] = useState<{
+    [key: number]: boolean;
+  }>({});
+
+  const toggleSectionVisibility = (index: number) => {
+    setVisibleSections((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
   const [isSuccess, setIsSuccess] = useState(false);
   const [goalData, setGoalData] = useState<Goal | null>(null);
   const [selectedSkillLevels, setSelectedSkillLevels] = useState<
@@ -60,6 +84,11 @@ const Goal = ({ params, searchParams }: any) => {
       try {
         const data = await fetchGoalByTitle(searchParams.goalTitle);
         setGoalData(data);
+        const initialVisibility: { [key: number]: boolean } = {};
+        data?.habits.forEach((_, index) => {
+          initialVisibility[index] = true;
+        });
+        setVisibleSections(initialVisibility);
       } catch (error) {
         // Handle error
         console.error("Error fetching data:", error);
@@ -166,135 +195,146 @@ const Goal = ({ params, searchParams }: any) => {
           {searchParams?.goalTitle}
         </p>
       </div>
-      <div className="space-y-36 mt-20">
+      <div className="space-y-44 mt-20">
         {goalData?.habits.map((habit, habitIndex) => (
           <div key={habitIndex} className="flex flex-col w-10/12 m-auto">
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-10">
               <div className="">
-                <p className="text-3xl font-bold tracking-tighter sm:text-2xl md:text-3xl mb-1">
-                  {habit.title}
-                </p>
-
-                <p className=" text-gray-500 text-sm dark:text-gray-400 mt-1">
+                <div
+                  className="pb-4 flex flex-row justify-between items-end border-b hover:cursor-pointer"
+                  onClick={() => toggleSectionVisibility(habitIndex)}
+                >
+                  <p className="text-3xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
+                    {habit.title}
+                  </p>
+                  {visibleSections[habitIndex] ? (
+                    <ChevronDown />
+                  ) : (
+                    <ChevronUp />
+                  )}
+                </div>
+                <p className=" text-gray-500 text-lg dark:text-gray-400 mt-2">
                   {habit.description}
                 </p>
               </div>
-              <div className="flex flex-col">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
-                  Tips from experts
-                </p>
-                <div className="space-y-4">
-                  {habit.authors.map((author, authorIndex) => (
-                    <div key={authorIndex} className="flex space-x-8 px-4">
-                      <Avatar className={cn("bg-white text-black size-9 mt-1")}>
-                        <Image
-                          src={getAvatarImage(author.author)}
-                          alt={author.author}
-                          width={40}
-                          height={40}
-                          className="rounded-full"
-                        />
-                      </Avatar>
-
-                      <div className="flex flex-col">
-                        <p className="text-gray-500 italic">"{author.tip}"</p>
-                        <div className="flex space-x-3">
-                          <p className="font-semibold">- {author.author}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
-                  Common Myths
-                </p>
-                <div className="space-y-4">
-                  {habit.myths.map((myth, mythIndex) => (
-                    <div key={mythIndex} className="flex space-x-4 px-4">
-                      <div className="flex flex-col space-y-2">
-                        <div className="flex items-center space-x-2">
-                          <Badge
-                            variant="outline"
-                            className="relative flex items-center gap-2 bg-red-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
-                          >
-                            <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-red-600/50 border-4 border-red-500">
-                              <X className="w-5 h-5 text-red-500" />
+              {visibleSections[habitIndex] && (
+                <>
+                  <div className="flex flex-col">
+                    <p className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-2xl mb-4">
+                      Tips from experts
+                    </p>
+                    <div className="space-y-4">
+                      {habit.authors.map((author, authorIndex) => (
+                        <div key={authorIndex} className="flex space-x-8 px-4">
+                          <Avatar className="bg-white text-black size-9 mt-1">
+                            <Image
+                              src={getAvatarImage(author.author)}
+                              alt={author.author}
+                              width={100}
+                              height={100}
+                              className="rounded-full"
+                            />
+                          </Avatar>
+                          <div className="flex flex-col text-lg">
+                            <p className="text-gray-500 italic">
+                              "{author.tip}"
+                            </p>
+                            <div className="flex space-x-3">
+                              <p className="font-semibold">- {author.author}</p>
                             </div>
-                            <p className="tracking-wide font-md w-14 text-center">
-                              MYTH
-                            </p>{" "}
-                            {/* Set fixed width and centered text */}
-                          </Badge>
-                          <p className="font-semibold pl-6">{myth.myth}</p>
+                          </div>
                         </div>
-                        <div className="flex items-start space-x-2">
-                          <Badge
-                            variant="outline"
-                            className="relative flex items-center gap-2 bg-green-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
-                          >
-                            <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-green-600/50 border-4 border-green-500">
-                              <Check className="w-5 h-5 text-green-500" />
-                            </div>
-                            <p className="tracking-wide font-md w-14 text-center">
-                              FACT
-                            </p>{" "}
-                            {/* Set fixed width and centered text */}
-                          </Badge>
-                          <p className="font-md text-gray-500 pl-6">
-                            {myth.rebuttal}
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="">
-                <div className="font-bold text-xl justify-end mr-14 items-center flex">
-                  <span className="pb-4">Start Tracking Now</span>
-                  <CornerRightDown className="w-7 h-7" />
-                </div>
-                <SkillTable
-                  data={sortSkillLevels(habit.skillLevels).map(
-                    (skillLevel) => ({
-                      skillLevel: skillLevel.skillLevel,
-                      habit: skillLevel.details,
-                    })
-                  )}
-                  onSelectionChange={(selectedSkillLevel) => {
-                    if (selectedSkillLevel !== null) {
-                      handleSelectionChange(habit.id, selectedSkillLevel);
-                    }
-                  }}
-                />
-              </div>
-              <div className="">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-2">
-                  References
-                </p>
-                <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {habit.videoLinks.map((url, index) => (
-                    <ResponsiveIframe key={index} src={url} />
-                  ))}
-                </div>
-              </div>
-              <div className="">
-                <p className="text-xl font-bold tracking-tighter sm:text-xl md:text-xl mb-4">
-                  Links
-                </p>
-                <ul className="mt-1 list-disc px-8 text-sm underline space-y-2">
-                  {habit.resourceLinks.map((link, index) => (
-                    <li key={index}>{link}</li>
-                  ))}
-                </ul>
-              </div>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-2xl mb-4">
+                      Common Myths
+                    </p>
+                    <div className="space-y-4">
+                      {habit.myths.map((myth, mythIndex) => (
+                        <div key={mythIndex} className="flex space-x-4 px-4">
+                          <div className="flex flex-col space-y-2">
+                            <div className="flex items-center space-x-2">
+                              <Badge
+                                variant="outline"
+                                className="relative flex items-center gap-2 bg-red-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
+                              >
+                                <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-red-600/50 border-4 border-red-500">
+                                  <X className="w-5 h-5 text-red-500" />
+                                </div>
+                                <p className="tracking-wide font-md w-14 text-center">
+                                  MYTH
+                                </p>
+                              </Badge>
+                              <p className="font-semibold pl-6 text-lg">
+                                {myth.myth}
+                              </p>
+                            </div>
+                            <div className="flex items-start space-x-2 text-lg">
+                              <Badge
+                                variant="outline"
+                                className="relative flex items-center gap-2 bg-green-500 text-white mt-2 p-2 py-2 rounded-full pl-6"
+                              >
+                                <div className="absolute left-0 -translate-x-1/2 transform flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg shadow-green-600/50 border-4 border-green-500">
+                                  <Check className="w-5 h-5 text-green-500" />
+                                </div>
+                                <p className="tracking-wide font-md w-14 text-center">
+                                  FACT
+                                </p>
+                              </Badge>
+                              <p className="font-md text-gray-500 pl-6">
+                                {myth.rebuttal}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="">
+                    <SkillTable
+                      data={sortSkillLevels(habit.skillLevels).map(
+                        (skillLevel) => ({
+                          skillLevel: skillLevel.skillLevel,
+                          habit: skillLevel.details,
+                        })
+                      )}
+                      onSelectionChange={(selectedSkillLevel) => {
+                        if (selectedSkillLevel !== null) {
+                          handleSelectionChange(habit.id, selectedSkillLevel);
+                        }
+                      }}
+                    />
+                  </div>
+                  <div className="">
+                    <p className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-2xl mb-2">
+                      References
+                    </p>
+                    <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {habit.videoLinks.map((url, index) => (
+                        <ResponsiveIframe key={index} src={url} />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="">
+                    <p className="text-2xl font-bold tracking-tighter sm:text-2xl md:text-2xl mb-4">
+                      Links
+                    </p>
+                    <ul className="mt-1 list-disc px-8 text-lg underline space-y-2">
+                      {habit.resourceLinks.map((link, index) => (
+                        <li key={index}>{link}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         ))}
       </div>
-      {selectedSkillLevels.length > 0 && (
+
+      {selectedSkillLevels.length > 0 ? (
         <>
           <RoutineSheet
             selectedSkillLevels={selectedSkillLevels}
@@ -310,14 +350,31 @@ const Goal = ({ params, searchParams }: any) => {
                 <p className="font-medium">
                   Your routine has been saved successfully under&nbsp;
                 </p>
-
-                <Link href={"/home/routines"}>
+                <Link href="/home/routines">
                   <p className="font-medium underline">Routines tab.</p>
                 </Link>
               </div>
             </div>
           )}
         </>
+      ) : (
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button className="flex gap-1 fixed bottom-14 right-10 bg-indigo-400 text-white px-5 py-4 rounded-full shadow-lg z-50 ">
+                Add to routine
+                <Plus />
+              </button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="p-2 font-semibold">Make a selection on the table</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        //   <button className="flex gap-1 fixed bottom-14 right-10 bg-indigo-400 text-white px-5 py-4 rounded-full shadow-lg z-50 ">
+        //   Add to routine
+        //   <Plus />
+        // </button>
       )}
     </div>
   );
