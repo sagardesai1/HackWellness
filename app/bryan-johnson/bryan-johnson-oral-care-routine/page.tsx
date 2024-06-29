@@ -12,6 +12,34 @@ import {
   ListTodo,
   ChevronRight,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Bryan Johnson's Oral Care Routine",
+    template: `%s | Bryan Johnson's Oral Care Routine`,
+  },
+  description:
+    "Bryan Johnson is an American entrepreneur, venture capitalist, writer and author. He is the founder and CEO of Kernel, a company creating devices that monitor and record brain activity, and OS Fund, a venture capital firm that invests in early-stage science and technology companies.",
+  keywords: [
+    "Bryan Johnson",
+    "Oral Care",
+    "Bryan Johnson Oral Care",
+    "Bryan Johnson Oral Health",
+  ],
+  openGraph: {
+    title: {
+      default: "Bryan Johnson's Oral Care Routine",
+      template: `%s | Bryan Johnson`,
+    },
+    description:
+      "Bryan Johnson is an American entrepreneur, venture capitalist, writer and author. He is the founder and CEO of Kernel, a company creating devices that monitor and record brain activity, and OS Fund, a venture capital firm that invests in early-stage science and technology companies.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-oral-care-routine"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -19,7 +47,7 @@ function page() {
       <div className="flex flex-col p-4 items-center justify-between mx-auto max-w-2xl text-center">
         <Image
           src={BryanJohnsonAvatar}
-          alt={"User name"}
+          alt={"Bryan Johnson"}
           width={150}
           height={150}
           className="rounded-full"

@@ -57,7 +57,7 @@ function Features() {
           </div>
           <Image
             src={FeaturesImage}
-            alt="Product screenshot"
+            alt="Biohacking routines"
             className="w-full sm:w-[48rem] md:w-[57rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}

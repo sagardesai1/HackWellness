@@ -3,6 +3,35 @@ import PeterAttiaImage from "@/images/AuthorImages/PeterAttia.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Peter Attia’s Fitness Protocol",
+    template: `%s | Peter Attia’s Fitness Protocol`,
+  },
+  description:
+    "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+  keywords: [
+    "Peter Attia",
+    "Biohacker",
+    "Fitness Protocol",
+    "Longevity expert",
+    "Peter Attia fitness",
+  ],
+  openGraph: {
+    title: {
+      default: "Peter Attia’s Fitness Protocol",
+      template: `%s | Peter Attia`,
+    },
+    description:
+      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/peter-attia/peter-attia-fitness-protocol"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -13,7 +42,7 @@ function page() {
             <div className="inline-flex space-x-6 items-center mr-3 text-sm text-gray-900 dark:text-white">
               <Image
                 src={PeterAttiaImage}
-                alt={"User name"}
+                alt={"Peter Attia"}
                 width={58}
                 height={58}
                 className="rounded-full"

@@ -31,7 +31,7 @@ export default function Example() {
         <div className="mx-auto max-w-2xl lg:mx-0 flex flex-row space-x-12 items-center">
           <Image
             src={BryanJohnsonImage}
-            alt=""
+            alt="Bryan Johnson"
             className="h-24 w-24 rounded-full bg-gray-50 "
           />
           <div className="flex flex-col ">

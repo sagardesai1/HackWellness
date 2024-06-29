@@ -45,7 +45,7 @@ const ScrollableCards = () => {
           <div className="relative h-72">
             <Image
               src={card.src}
-              alt="Card image"
+              alt="HackWellness Goals"
               fill={true}
               sizes="100% 100%"
               style={{

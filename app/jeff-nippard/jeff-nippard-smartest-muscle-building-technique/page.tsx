@@ -13,6 +13,34 @@ import {
   Telescope,
   ChevronRight,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Jeff Nippard's Smartest Muscle Building Technique",
+    template: `%s | Jeff Nippard's Smartest Muscle Building Technique`,
+  },
+  description:
+    "Jeff Nippard is a pro natural bodybuilder, powerlifter, and science communicator to over 2 million YouTube subscribers.",
+  keywords: [
+    "Jeff Nippard",
+    "Fitness Protocol",
+    "Smartest Muscle Building Technique",
+    "Long length partials",
+  ],
+  openGraph: {
+    title: {
+      default: "Jeff Nippard's Smartest Muscle Building Technique",
+      template: `%s | Jeff Nippard`,
+    },
+    description:
+      "Jeff Nippard is a pro natural bodybuilder, powerlifter, and science communicator to over 2 million YouTube subscribers.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/jeff-nippard/jeff-nippard-smartest-muscle-building-technique"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -20,7 +48,7 @@ function page() {
       <div className="flex flex-col p-4 items-center justify-between mx-auto max-w-2xl text-center">
         <Image
           src={JeffNippardAvatar}
-          alt={"User name"}
+          alt={"Jeff Nippard"}
           className="w-48 h-48 rounded-full"
           style={{
             objectFit: "cover",

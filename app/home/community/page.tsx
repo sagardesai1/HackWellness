@@ -23,7 +23,7 @@ function page() {
           <Image
             // unoptimized
             src={DiscordImage}
-            alt="App screenshot"
+            alt="HackWellness Discord"
             width={2432}
             height={1442}
             className="rounded-xl shadow-2xl "

@@ -3,6 +3,33 @@ import AndrewHubermanAvatar from "@/images/AuthorImages/AndrewHuberman.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Andrew Huberman's Quickly Improve Focus",
+    template: `%s | Andrew Huberman's Quickly Improve Focus`,
+  },
+  description:
+    "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+  keywords: [
+    "Andrew Huberman",
+    "Quickly Improve Focus",
+    "Andrew Huberman Visual focus",
+  ],
+  openGraph: {
+    title: {
+      default: "Andrew Huberman's Quickly Improve Focus",
+      template: `%s | Andrew Huberman's Quickly Improve Focus`,
+    },
+    description:
+      "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-quickly-improve-focus"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -13,7 +40,7 @@ function page() {
             <div className="inline-flex space-x-6 items-center mr-3 text-sm text-gray-900 dark:text-white">
               <Image
                 src={AndrewHubermanAvatar}
-                alt={"User name"}
+                alt={"Andrew Huberman"}
                 width={58}
                 height={58}
                 className="rounded-full"

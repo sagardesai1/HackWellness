@@ -23,7 +23,7 @@ export default function Example() {
         <div className="mx-auto max-w-2xl lg:mx-0 flex flex-row space-x-12 items-center">
           <Image
             src={JeffNippardImage}
-            alt=""
+            alt="Jeff Nippard"
             className="h-24 w-24 rounded-full overflow-hidden bg-gray-50 "
             style={{
               objectFit: "cover",

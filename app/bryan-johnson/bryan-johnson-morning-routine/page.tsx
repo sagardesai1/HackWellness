@@ -3,6 +3,36 @@ import BryanJohnsonImage from "@/images/AuthorImages/BryanJohnson.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Bryan Johnson's Morning Routine",
+    template: `%s | Bryan Johnson's Morning Routine`,
+  },
+  description:
+    "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
+  keywords: [
+    "Bryan Johnson",
+    "Morning Routine",
+    "Bryan Johnson Morning Routine",
+    "Bryan Johnson supplements",
+    "Bryan Johnson red light therapy",
+    "Bryan Johnson blue light therapy",
+  ],
+  openGraph: {
+    title: {
+      default: "Bryan Johnson's Morning Routine",
+      template: `%s | Bryan Johnson`,
+    },
+    description:
+      "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-morning-routine"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -13,7 +43,7 @@ function page() {
             <div className="inline-flex space-x-6 items-center mr-3 text-sm text-gray-900 dark:text-white">
               <Image
                 src={BryanJohnsonImage}
-                alt={"User name"}
+                alt={"Bryan Johnson"}
                 width={58}
                 height={58}
                 className="rounded-full"

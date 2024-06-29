@@ -13,6 +13,33 @@ import {
   Telescope,
   ChevronRight,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Andrew Huberman's Quickly Improve Focus",
+    template: `%s | Andrew Huberman's Quickly Improve Focus`,
+  },
+  description:
+    "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+  keywords: [
+    "Andrew Huberman",
+    "Quickly Improve Focus",
+    "Andrew Huberman Visual focus",
+  ],
+  openGraph: {
+    title: {
+      default: "Andrew Huberman's Quickly Improve Focus",
+      template: `%s | Andrew Huberman's Quickly Improve Focus`,
+    },
+    description:
+      "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+    url: new URL(
+      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-quickly-improve-focus"
+    ),
+    type: "article",
+  },
+};
 
 function page() {
   return (
@@ -20,7 +47,7 @@ function page() {
       <div className="flex flex-col p-4 items-center justify-between mx-auto max-w-2xl text-center">
         <Image
           src={AndrewHubermanAvatar}
-          alt={"User name"}
+          alt={"Andrew Huberman"}
           width={150}
           height={150}
           className="rounded-full"

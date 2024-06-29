@@ -116,7 +116,7 @@ function Convert() {
               <Avatar className={cn("bg-white text-black size-6")}>
                 <Image
                   src={AndrewHubermanAvatar}
-                  alt={"User name"}
+                  alt={"Andrew Huberman"}
                   width={40}
                   height={40}
                   className="rounded-full"
@@ -185,7 +185,7 @@ function Convert() {
               <Avatar className={cn("bg-white text-black size-6")}>
                 <Image
                   src={AndrewHubermanAvatar}
-                  alt={"User name"}
+                  alt={"Andrew Huberman"}
                   width={40}
                   height={40}
                   className="rounded-full"

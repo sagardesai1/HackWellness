@@ -51,7 +51,7 @@ function Hero() {
               <Image
                 // unoptimized
                 src={LandingPageImage}
-                alt="App screenshot"
+                alt="Biohacking library"
                 width={2432}
                 height={1442}
                 className="rounded-ml shadow-2xl ring-1 ring-gray-900/10"
