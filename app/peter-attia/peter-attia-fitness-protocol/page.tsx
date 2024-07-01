@@ -85,7 +85,7 @@ function page() {
                     <a
                       target="_blank"
                       href={"https://www.rehabps.com/"}
-                      className="underline"
+                      className="underline text-indigo-600"
                     >
                       Dynamic Neuromuscular Stabilization (DNS)
                     </a>{" "}
@@ -224,7 +224,7 @@ function page() {
                   </span>
                 </li>
                 <li className="mb-2">
-                  <span className="font-semibold text-black underline">
+                  <span className="font-semibold text-indigo-600 underline">
                     <a
                       target="_blank"
                       href={"https://www.omnicalculator.com/sports/vo2-max"}
@@ -249,7 +249,7 @@ function page() {
                 href={
                   "https://journals.sagepub.com/doi/10.1177/10998004221120945"
                 }
-                className="underline text-lg leading-8 text-gray-600"
+                className="underline text-lg leading-8 text-indigo-600"
               >
                 Research
               </a>{" "}
@@ -266,7 +266,7 @@ function page() {
                 <a
                   target="_blank"
                   href={"https://peterattiamd.com/ama32/"}
-                  className="underline text-lg leading-8 text-gray-600"
+                  className="underline text-lg leading-8 text-indigo-600"
                 >
                   https://peterattiamd.com/ama32/
                 </a>
@@ -275,7 +275,7 @@ function page() {
                 <a
                   target="_blank"
                   href={"https://www.youtube.com/watch?v=jN0pRAqiUJU"}
-                  className="underline text-lg leading-8 text-gray-600"
+                  className="underline text-lg leading-8 text-indigo-600"
                 >
                   https://www.youtube.com/watch?v=jN0pRAqiUJU
                 </a>

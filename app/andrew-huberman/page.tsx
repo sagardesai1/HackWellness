@@ -14,6 +14,14 @@ const posts: Post[] = [
   },
   {
     id: 2,
+    title: "Sleep Protocol",
+    href: "andrew-huberman/andrew-huberman-sleep-protocol",
+    description:
+      "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
+    category: "Sleep",
+  },
+  {
+    id: 3,
     title: "Quickly Improve Focus",
     href: "andrew-huberman/andrew-huberman-quickly-improve-focus",
     description:

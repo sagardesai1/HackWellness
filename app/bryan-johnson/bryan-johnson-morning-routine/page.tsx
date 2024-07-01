@@ -274,7 +274,7 @@ function page() {
                 <a
                   target="_blank"
                   href={"https://www.youtube.com/watch?v=OJZ4pjzwDLU"}
-                  className="underline text-lg leading-8 text-gray-600"
+                  className="underline text-lg leading-8 text-indigo-600"
                 >
                   https://www.youtube.com/watch?v=OJZ4pjzwDLU
                 </a>

@@ -286,15 +286,19 @@ function page() {
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">
               Sources
             </p>
-            <a
-              target="_blank"
-              href={
-                "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
-              }
-              className="underline text-lg leading-8 text-gray-600"
-            >
-              https://www.hubermanlab.com/newsletter/foundational-fitness-protocol
-            </a>
+            <ul className="list-disc pl-5 mt-6 text-lg leading-8">
+              <li className="">
+                <a
+                  target="_blank"
+                  href={
+                    "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
+                  }
+                  className="underline text-lg leading-8 text-indigo-600"
+                >
+                  https://www.hubermanlab.com/newsletter/foundational-fitness-protocol
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="mt-28 flex items-center justify-center gap-x-6">
             <Link
