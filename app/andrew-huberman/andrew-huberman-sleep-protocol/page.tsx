@@ -7,25 +7,26 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Huberman's Quickly Improve Focus",
-    template: `%s | Andrew Huberman's Quickly Improve Focus`,
+    default: "Andrew Huberman's Sleep Protocol",
+    template: `%s | Andrew Huberman's Sleep Protocol`,
   },
   description:
-    "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+    "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
   keywords: [
     "Andrew Huberman",
-    "Quickly Improve Focus",
-    "Andrew Huberman Visual focus",
+    "Andrew Huberman Sleep",
+    "Andrew Huberman Sleep Protocol",
+    "Sleep Protocol",
   ],
   openGraph: {
     title: {
-      default: "Andrew Huberman's Quickly Improve Focus",
-      template: `%s | Andrew Huberman's Quickly Improve Focus`,
+      default: "Andrew Huberman's Sleep Protocol",
+      template: `%s | Andrew Huberman's Sleep Protocol`,
     },
     description:
-      "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+      "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
     url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-quickly-improve-focus"
+      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-sleep-protocol"
     ),
     type: "article",
   },
