@@ -12,8 +12,10 @@ import {
   ListTodo,
   Telescope,
   ChevronRight,
+  ChevronLeft,
 } from "lucide-react";
 import { Metadata } from "next";
+import NewsLetter from "@/components/NewsLetter";
 
 export const metadata: Metadata = {
   title: {
@@ -44,6 +46,14 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div className="flex flex-col mt-6">
+      <Link href={"/andrew-huberman"}>
+        <div className="flex flex-row gap-2 items-center mb-10 w-11/12 mx-auto">
+          <ChevronLeft className="w-5 h-5 text-gray-800" />
+          <span className="text-sm font-semibold text-gray-800">
+            More articles on Andrew Huberman{" "}
+          </span>
+        </div>
+      </Link>
       <div className="flex flex-col p-4 items-center justify-between mx-auto max-w-2xl text-center">
         <Image
           src={AndrewHubermanAvatar}
@@ -204,7 +214,8 @@ function page() {
             </Link>
           </ul>
         </div>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
+        <NewsLetter />
+        <div className="mt-20 flex items-center justify-center gap-x-6">
           <Link
             href="/"
             className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

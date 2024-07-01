@@ -2,8 +2,9 @@ import React from "react";
 import BryanJohnsonImage from "@/images/AuthorImages/BryanJohnson.jpeg";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Metadata } from "next";
+import NewsLetter from "@/components/NewsLetter";
 
 export const metadata: Metadata = {
   title: {
@@ -39,6 +40,14 @@ function page() {
     <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
       <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
         <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg ">
+          <Link href={"/bryan-johnson"}>
+            <div className="flex flex-row gap-2 items-center mb-10">
+              <ChevronLeft className="w-5 h-5 text-gray-800" />
+              <span className="text-sm font-semibold text-gray-800">
+                More articles on Bryan Johnson{" "}
+              </span>
+            </div>
+          </Link>
           <header className="mb-4 lg:mb-6 not-format">
             <div className="inline-flex space-x-6 items-center mr-3 text-sm text-gray-900 dark:text-white">
               <Image
@@ -281,16 +290,17 @@ function page() {
               </li>
             </ul>
           </div>
-          <div className="mt-28 flex items-center justify-center gap-x-6">
-            <Link
-              href="/"
-              className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Start Building Your Protocol Now
-              <ChevronRight className="w-5 h-5" />
-            </Link>
-          </div>
         </article>
+      </div>
+      <NewsLetter />
+      <div className="mt-20 flex items-center justify-center gap-x-6">
+        <Link
+          href="/"
+          className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          Start Building Your Protocol Now
+          <ChevronRight className="w-5 h-5" />
+        </Link>
       </div>
     </div>
   );
