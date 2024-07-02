@@ -113,12 +113,12 @@ function page() {
                         </li>
                       </ul>
                       <div className="mt-6">
-                        Get outside within 30-60 minutes of waking up. Second
-                        best is to do this in the late afternoon before sunset,
-                        in case you miss the morning window. Exposure to natural
-                        light helps regulate your circadian rhythm, which
-                        controls your sleep-wake cycle. Here’s how to adapt your
-                        time in the natural light based on the weather:
+                        If natural light is scarce where you live, consider
+                        using a light therapy lamp that can artificially
+                        substitute sunlight. Avoid wearing sunglasses during
+                        sunglight exposure, but eyeglasses and contact lenses
+                        are fine. Also don’t look directly at the sun - instead
+                        simply look in the general direction of the sun.
                       </div>
                     </div>
                   </li>
