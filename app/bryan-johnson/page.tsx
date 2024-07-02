@@ -6,19 +6,27 @@ import Link from "next/link";
 const posts: Post[] = [
   {
     id: 1,
-    title: "Oral Care Routine",
-    href: "bryan-johnson/bryan-johnson-oral-care-routine",
-    description:
-      "How Bryan Johnson fixed his terrible oral health with just 7 steps.",
-    category: "Oral Care",
-  },
-  {
-    id: 2,
     title: "Morning Routine",
     href: "bryan-johnson/bryan-johnson-morning-routine",
     description:
       "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
     category: "Productivity",
+  },
+  {
+    id: 2,
+    title: "Olive Oil Criteria",
+    href: "bryan-johnson/bryan-johnson-olive-oil-criteria",
+    description:
+      "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
+    category: "Anti Aging",
+  },
+  {
+    id: 3,
+    title: "Oral Care Routine",
+    href: "bryan-johnson/bryan-johnson-oral-care-routine",
+    description:
+      "How Bryan Johnson fixed his terrible oral health in just 7 steps.",
+    category: "Oral Care",
   },
 
   // More posts...

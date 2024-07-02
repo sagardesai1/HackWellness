@@ -21,6 +21,14 @@ const posts: Post[] = [
     category: "Sleep",
   },
   {
+    id: 2,
+    title: "ADHA Protocol",
+    href: "andrew-huberman/andrew-huberman-adhd-protocol",
+    description:
+      "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Also, being able to hyper-focus on tasks that capture your interest is another tell-tale ADHD trait. Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine.",
+    category: "Mental Health",
+  },
+  {
     id: 3,
     title: "Quickly Improve Focus",
     href: "andrew-huberman/andrew-huberman-quickly-improve-focus",

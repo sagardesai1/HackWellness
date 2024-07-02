@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: "Bryan Johnson's Morning Routine",
-      template: `%s | Bryan Johnson`,
+      template: `%s | Bryan Johnson's Morning Routine`,
     },
     description:
       "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
@@ -278,8 +278,8 @@ function page() {
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
               Sources
             </p>
-            <ul className="list-disc pl-5 mt-2">
-              <li className="mt-1">
+            <ul className="list-disc pl-5 mt-5">
+              <li className="mt-2">
                 <a
                   target="_blank"
                   href={"https://www.youtube.com/watch?v=OJZ4pjzwDLU"}

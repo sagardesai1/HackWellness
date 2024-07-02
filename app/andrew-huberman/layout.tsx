@@ -7,7 +7,9 @@ export const metadata: Metadata = {
   keywords: [
     "Andrew Huberman",
     "Biohacker",
-    "Fitness Protocol",
+    "Andrew Huberman Fitness Protocol",
+    "Andrew Huberman Sleep Protocol",
+    "Andrew Huberman ADHD Protocol",
     "Quickly Improve Focus",
   ],
   openGraph: {

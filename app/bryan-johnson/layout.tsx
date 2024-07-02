@@ -4,7 +4,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: { default: "Bryan Johnson", template: `%s | Bryan Johnson` },
   description: "Bryan Johnson articles.",
-  keywords: ["Bryan Johnson", "Biohacker", "Morning Routine", "Oral Care"],
+  keywords: [
+    "Bryan Johnson",
+    "Bryan Johnson Biohacker",
+    "Bryan Johnson Morning Routine",
+    "Bryan Johnson Olive Oil Criteria",
+    "Bryan Johnson Oral Care Routine",
+  ],
   openGraph: {
     title: { default: "Bryan Johnson", template: `%s | Bryan Johnson` },
     description: "Bryan Johnson articles.",
