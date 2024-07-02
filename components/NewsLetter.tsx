@@ -1,7 +1,16 @@
-import Script from "next/script";
+"use client";
+import { useEffect } from "react";
 import React from "react";
 
 function NewsLetter() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js";
+    script.async = true;
+    document.getElementById("getWaitlistContainer")?.appendChild(script);
+  }, []);
+
   return (
     <section className="bg-white dark:bg-gray-900 mt-20">
       <div className="flex flex-col items-center justify-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -25,7 +34,6 @@ function NewsLetter() {
           type="text/css"
           href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"
         />
-        <Script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></Script>
       </div>
     </section>
   );
