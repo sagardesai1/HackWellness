@@ -303,8 +303,8 @@ function page() {
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">
               Sources
             </p>
-            <ul className="list-disc pl-5 mt-6 text-lg leading-8">
-              <li className="">
+            <ul className="list-disc pl-5 mt-5">
+              <li className="mt-2">
                 <a
                   target="_blank"
                   href={

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Bryan Johnson",
     "Bryan Johnson Biohacker",
     "Bryan Johnson Morning Routine",
+    "Bryan Johnson Red Light Therapy Protocol",
     "Bryan Johnson Olive Oil Criteria",
     "Bryan Johnson Oral Care Routine",
   ],

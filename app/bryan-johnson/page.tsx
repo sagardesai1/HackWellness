@@ -14,6 +14,14 @@ const posts: Post[] = [
   },
   {
     id: 2,
+    title: "Red Light Therapy Protocol",
+    href: "bryan-johnson/bryan-johnson-red-light-therapy-protocol",
+    description:
+      "Wondering if red light therapy lives up to the hype? Research suggests it might be worth it as it has shown to have multiple benefits such as improved mitochondrial function, reduced inflammation, and supported collagen production. Here’s a look at Bryan Johnson’s protocol to help you find the right product and dosing:",
+    category: "Anti Aging",
+  },
+  {
+    id: 3,
     title: "Olive Oil Criteria",
     href: "bryan-johnson/bryan-johnson-olive-oil-criteria",
     description:
@@ -21,7 +29,7 @@ const posts: Post[] = [
     category: "Anti Aging",
   },
   {
-    id: 3,
+    id: 4,
     title: "Oral Care Routine",
     href: "bryan-johnson/bryan-johnson-oral-care-routine",
     description:
