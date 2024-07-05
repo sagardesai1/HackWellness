@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight, MoveLeft, MoveRight } from "lucide-react";
 import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: {
@@ -293,6 +294,7 @@ function page() {
           </div>
         </article>
       </div>
+      {/* <RelatedArticles /> */}
       <NewsLetter />
       <div className="mt-20 flex items-center justify-center gap-x-6">
         <Link

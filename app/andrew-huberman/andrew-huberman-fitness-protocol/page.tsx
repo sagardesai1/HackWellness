@@ -8,25 +8,25 @@ import NewsLetter from "@/components/NewsLetter";
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Huberman's Quickly Improve Focus",
-    template: `%s | Andrew Huberman's Quickly Improve Focus`,
+    default: "Andrew Huberman’s Fitness Protocol",
+    template: `%s | Andrew Huberman’s Fitness Protocol`,
   },
   description:
-    "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+    "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol into your routine.",
   keywords: [
     "Andrew Huberman",
-    "Quickly Improve Focus",
-    "Andrew Huberman Visual focus",
+    "Andrew Huberman’s Fitness Protocol",
+    "Fitness Protocol",
   ],
   openGraph: {
     title: {
-      default: "Andrew Huberman's Quickly Improve Focus",
-      template: `%s | Andrew Huberman's Quickly Improve Focus`,
+      default: "Andrew Huberman’s Fitness Protocol",
+      template: `%s | Andrew Huberman’s Fitness Protocol`,
     },
     description:
-      "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
+      "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol into your routine.",
     url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-quickly-improve-focus"
+      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-fitness-protocol"
     ),
     type: "article",
   },
