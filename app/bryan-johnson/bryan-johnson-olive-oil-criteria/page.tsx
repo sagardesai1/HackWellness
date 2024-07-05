@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
+import { articles } from "@/types/Articles";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: {
@@ -72,18 +74,43 @@ function page() {
           <h1 className="mt-8 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
             Bryan Johnson’s Olive Oil Criteria
           </h1>
+
           <p className="text-lg leading-8 text-gray-600">
-            Ever wanted to know the #1 best food you can eat to slow down your
-            speed of aging and reserve it? According to Bryan Johnson, the key
-            to reverse aging is extra virgin olive. Studies have shown that it
-            helps with weight management, blood pressure, blood sugar levels,
-            cholesterol, heart health, brain health, and mood.
+            What’s the best food you can eat to slow down your speed of aging?
+            According to Bryan Johnson, the key to reverse aging is extra virgin
+            olive oil. Studies have shown that it helps with weight management,
+            blood pressure, blood sugar levels, cholesterol, heart health, brain
+            health, and mood.
           </p>
           <div className="mt-14">
+            <span className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+              Bryan Johnson’s Olive Oil Buying Criteria
+            </span>
+            <p className="text-lg leading-8 text-gray-600 mt-8">
+              Want to know what olive oil does Bryan Johnson uses? Bryan Johnson
+              actually developed his own extra virgin olive oil called{" "}
+              <a
+                target="_blank"
+                className="underline text-lg leading-8 text-indigo-600"
+                href="https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?crid=3CHDJPQZDNSHU&dib=eyJ2IjoiMSJ9.3BEYQDP9vQ9ELOXr9LqlI6QpxbEsrCaa3Krk-rCBHTJDCuOc6CHUK1rxj0r8yc08GIfF0U8wjxySssHNbqWqow3AEfQUD_86BVN94XPEnEcJKGqJb5Bq77QOvG4KLZ7sDlXqoFuw8Yggnhcl7IFAuCYITBdas4Tlwwz5XFBFtA03kgo8dSXIbCM9hBNB1HQ2rzyCg0IafmOo3TMPXOcIGlfmYudcQ1gZq24df5SrxWagiWdbrHE8F8uel2M1YdkZ8RK6GnOY-xyJb3lYWAVKwOU282wcwxIJP5KE-yCC58Y.EBsEPzWQqcQTqvu73hLZqn0TDhHhhcgMOEDv1B9Ex0I&dib_tag=se&keywords=blueprint+olive+oil&qid=1720048948&sprefix=blueprint+olive+oil,aps,828&sr=8-1&linkCode=sl1&tag=hackwellnes0c-20&linkId=b641f1f23d9329580db514426e7a2f00&language=en_US&ref_=as_li_ss_tl"
+              >
+                Snake Oil
+              </a>{" "}
+              which is third-party tested, and has a high polyphenol + oleic
+              acid content (eg Blueprint EVOO (May Harvest 2023) has 72.26%
+              oleic acid and 523.4 mg/kg total biophenols).
+            </p>
+          </div>
+          <div className="mt-20">
             <div className="mt-10 leading-8 ">
               <span className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                 Bryan Johnson’s Olive Oil Buying Criteria
               </span>
+              <p className="text-lg leading-8 text-gray-600 mt-8">
+                For those of you looking to make an informed decision of what
+                olive oil to buy, here is what Bryan Johnson suggests looking
+                out for:
+              </p>
               <ol className="list-decimal pl-5">
                 <div className="mb-8">
                   <li className="text-gray-600 text-lg mt-4 font-normal">
@@ -94,78 +121,41 @@ function page() {
                   <li className="text-gray-600 text-lg mt-4 font-normal">
                     <div className="">
                       High polyphenol count (over 400 mg/kg)
-                      <ul className="list-disc pl-5 mt-5">
-                        <li className="mb-5">
-                          Blueprint EVOO has 523.4 mg/kg total biophenols (HPLC)
-                        </li>
-                      </ul>
                     </div>
                   </li>
                 </div>
                 <div className="mb-8">
                   <li className="text-gray-600 text-lg mt-4 font-normal">
+                    <div className="">High Oleic acid count (over 67%)</div>
+                  </li>
+                </div>
+                <div className="mb-8">
+                  <li className="text-gray-600 text-lg mt-4 font-normal">
                     <div className="">
-                      High Oleic acid count (over 67%)
-                      <ul className="list-disc pl-5 mt-5">
-                        <li className="mb-5">
-                          Our current Blueprint EVOO (May Harvest 2023) has
-                          72.26% oleic acid
-                        </li>
-                      </ul>
+                      Harvest Date within the last year - Try to find EVOO with
+                      a recent harvest date. The fresher the olives, the more
+                      nutrients and less oxidation.{" "}
                     </div>
                   </li>
                 </div>
                 <div className="mb-8">
                   <li className="text-gray-600 text-lg mt-4 font-normal">
-                    <div className="">
-                      Harvest Date
-                      <ul className="list-disc pl-5 mt-5">
-                        <li className="mb-5">
-                          Where possible, try to find EVOO with a recent harvest
-                          date. This lets you know when the olives were picked.
-                        </li>
-                        <li className="mb-5">
-                          The fresher the olives, the more nutrients they’ll
-                          have.
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </div>
-                <div className="mb-8">
-                  <li className="text-gray-600 text-lg mt-4 font-normal">
-                    <div className="">Third-Party Tested</div>
+                    <div className="">UV protectant bottle</div>
                   </li>
                 </div>
                 <div className="mb-8">
                   <li className="text-gray-600 text-lg mt-4 font-normal">
                     <div className="">
-                      Harvest Date
-                      <ul className="list-disc pl-5 mt-5">
-                        <li className="mb-5">
-                          Every single batch of oil needs to be quality tested
-                          by a trustworthy third party, so you know that it is
-                          what it says on the bottle.
-                        </li>
-                        <li className="mb-5">
-                          BP is rigorously 3rd-party tested - see the{" "}
-                          <a
-                            target="_blank"
-                            className="underline text-lg leading-8 text-indigo-600"
-                            href="https://blueprint.bryanjohnson.com/products/premium-extra-virgin-olive-oil?variant=45585598578973"
-                          >
-                            website
-                          </a>{" "}
-                          for more information.
-                        </li>
-                      </ul>
+                      Third-Party Tested - quality testing by a trustworthy
+                      third party is important as there are a lot of issues with
+                      purity in the olive oil market
                     </div>
                   </li>
                 </div>
               </ol>
             </div>
           </div>
-          <div className="mt-20">
+          <div className="mt-20 mb-40">
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
               Sources
             </p>
@@ -257,8 +247,9 @@ function page() {
           </div>
         </article>
       </div>
+      <RelatedArticles articles={articles} />
       <NewsLetter />
-      <div className="mt-20 flex items-center justify-center gap-x-6">
+      <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
           href="/"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

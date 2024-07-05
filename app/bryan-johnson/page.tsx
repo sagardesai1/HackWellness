@@ -43,7 +43,7 @@ const posts: Post[] = [
 export default function Example() {
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+      <div className="mx-auto min-h-screen max-w-4xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 flex flex-row space-x-12 items-center">
           <Image
             src={BryanJohnsonImage}

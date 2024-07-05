@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
+import { articles } from "@/types/Articles";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: {
@@ -214,8 +216,9 @@ function page() {
             </Link>
           </ul>
         </div>
+        <RelatedArticles articles={articles} />
         <NewsLetter />
-        <div className="mt-20 flex items-center justify-center gap-x-6">
+        <div className="my-20 flex items-center justify-center gap-x-6">
           <Link
             href="/"
             className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

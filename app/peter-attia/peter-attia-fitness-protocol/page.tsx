@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, MoveLeft, MoveRight } from "lucide-react";
 import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import RelatedArticles from "@/components/RelatedArticles";
-
+import { articles } from "@/types/Articles";
 export const metadata: Metadata = {
   title: {
     default: "Peter Attia’s Fitness Protocol",
@@ -267,7 +267,7 @@ function page() {
               functioning.
             </span>
           </div>
-          <div className="mt-20">
+          <div className="mt-20 mb-40">
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
               Sources
             </p>
@@ -294,9 +294,9 @@ function page() {
           </div>
         </article>
       </div>
-      {/* <RelatedArticles /> */}
+      <RelatedArticles articles={articles} />
       <NewsLetter />
-      <div className="mt-20 flex items-center justify-center gap-x-6">
+      <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
           href="/"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
