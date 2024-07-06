@@ -91,33 +91,37 @@ function page() {
             <p className="text-2xl font-semibold">Tools</p>
           </div>
           <ul className="mt-1 list-disc px-8 text-sm underline">
-            <Link href={"https://amzn.to/3Ky8E5q"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/3Ky8E5q"}
+            >
               <li>Water flosser</li>
-            </Link>
-            <Link href={"https://amzn.to/4aScRMf"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/4aScRMf"}>
               <li>Oral-B Toothbrush</li>
-            </Link>
-            <Link href={"https://amzn.to/3yQWQsE"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/3yQWQsE"}>
               <li>Soft toothbrush heads</li>
-            </Link>
-            <Link href={"https://amzn.to/3VtyGgs"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/3VtyGgs"}>
               <li>Mouthwash</li>
-            </Link>
-            <Link href={"https://amzn.to/4eo1rmv"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/4eo1rmv"}>
               <li>Sensodyne Toothpaste</li>
-            </Link>
-            <Link href={"https://amzn.to/3VqsjKV"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/3VqsjKV"}>
               <li>Dr. Collins Biomin Tooth Sensitivity Toothpaste</li>
-            </Link>
-            <Link href={"https://amzn.to/4bOeWtL"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/4bOeWtL"}>
               <li>DrTungs Floss</li>
-            </Link>
-            <Link href={"https://amzn.to/3Ksewxg"}>
+            </a>
+            <a target="_blank" href={"https://amzn.to/3Ksewxg"}>
               <li>DrTungs Tongue Scraper</li>
-            </Link>
-            <Link href={"https://somnomed.com"}>
+            </a>
+            <a target="_blank" href={"https://somnomed.com"}>
               <li>SomnoDent Bruxism Device</li>
-            </Link>
+            </a>
           </ul>
           <div className="flex items-center gap-2 mt-4">
             <div className="bg-indigo-100 rounded-2xl p-1">
