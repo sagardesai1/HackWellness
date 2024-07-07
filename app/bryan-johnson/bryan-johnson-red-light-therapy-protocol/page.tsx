@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Bryan Johnson’s Red Light Therapy Protocol",
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Wondering if red light therapy lives up to the hype? Research suggests it might be worth it as it has shown to have multiple benefits such as improved mitochondrial function, reduced inflammation, and supported collagen production. Here’s a look at Bryan Johnson’s protocol to help you find the right product and dosing.",
     url: new URL(
-      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-red-light-therapy-protocol"
+      `${BASE_URL}/bryan-johnson/bryan-johnson-red-light-therapy-protocol`
     ),
     type: "article",
   },

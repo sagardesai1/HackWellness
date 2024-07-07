@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Bryan Johnson's Morning Routine",
@@ -30,9 +33,7 @@ export const metadata: Metadata = {
     },
     description:
       "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
-    url: new URL(
-      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-morning-routine"
-    ),
+    url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-morning-routine`),
     type: "article",
   },
 };

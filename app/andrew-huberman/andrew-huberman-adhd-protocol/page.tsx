@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Andrew Huberman's ADHA Protocol",
@@ -28,9 +31,7 @@ export const metadata: Metadata = {
     },
     description:
       "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Also, being able to hyper-focus on tasks that capture your interest is another tell-tale ADHD trait. Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. ",
-    url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-adhd-protocol"
-    ),
+    url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-adhd-protocol`),
     type: "article",
   },
 };

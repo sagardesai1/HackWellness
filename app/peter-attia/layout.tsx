@@ -2,6 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Metadata } from "next";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: { default: "Peter Attia", template: `%s | Peter Attia` },
   description: "Peter Attia articles.",
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: { default: "Peter Attia", template: `%s | Peter Attia` },
     description: "Peter Attia articles.",
-    url: new URL("https://hack-wellness.vercel.app/peter-attia"),
+    url: new URL(`${BASE_URL}/peter-attia`),
     type: "website",
   },
 };

@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Andrew Huberman's Sleep Protocol",
@@ -28,9 +31,7 @@ export const metadata: Metadata = {
     },
     description:
       "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
-    url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-sleep-protocol"
-    ),
+    url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-sleep-protocol`),
     type: "article",
   },
 };

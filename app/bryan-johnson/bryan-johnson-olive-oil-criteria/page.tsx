@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Bryan Johnson's Olive Oil Criteria",
@@ -28,9 +31,7 @@ export const metadata: Metadata = {
     },
     description:
       "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
-    url: new URL(
-      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-olive-oil-criteria"
-    ),
+    url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-olive-oil-criteria`),
     type: "article",
   },
 };

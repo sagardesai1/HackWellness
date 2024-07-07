@@ -18,6 +18,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Bryan Johnson's Oral Care Routine",
@@ -38,9 +41,7 @@ export const metadata: Metadata = {
     },
     description:
       "Bryan Johnson is an American entrepreneur, venture capitalist, writer and author. He is the founder and CEO of Kernel, a company creating devices that monitor and record brain activity, and OS Fund, a venture capital firm that invests in early-stage science and technology companies.",
-    url: new URL(
-      "https://hack-wellness.vercel.app/bryan-johnson/bryan-johnson-oral-care-routine"
-    ),
+    url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-oral-care-routine`),
     type: "article",
   },
 };

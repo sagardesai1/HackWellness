@@ -9,8 +9,11 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hack-wellness.vercel.app/"),
+  metadataBase: new URL(BASE_URL),
   title: { default: "HackWellness", template: `%s | HackWellness` },
   description:
     "Build your personalized protocol based on the advice of renowned biohackers like Andrew Huberman, Bryan Johnson, and Peter Attia.",
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
     title: { default: "HackWellness", template: `%s | HackWellness` },
     description:
       "Build your personalized protocol based on the advice of renowned biohackers like Andrew Huberman, Bryan Johnson, and Peter Attia.",
-    url: new URL("https://hack-wellness.vercel.app/"),
+    url: new URL(BASE_URL),
     type: "website",
   },
 };

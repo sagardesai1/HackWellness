@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = "https://hack-wellness.vercel.app";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
 
 function getDirectories(basePath: string): string[] {
   return fs

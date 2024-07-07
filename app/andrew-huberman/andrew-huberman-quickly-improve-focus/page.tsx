@@ -19,6 +19,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Andrew Huberman's Quickly Improve Focus",
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
     description:
       "Andrew Huberman, Ph.D., is a neuroscientist and tenured professor in the Department of Neurobiology and by courtesy, Psychiatry and Behavioral Sciences at Stanford School of Medicine.",
     url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-quickly-improve-focus"
+      `${BASE_URL}/andrew-huberman/andrew-huberman-quickly-improve-focus`
     ),
     type: "article",
   },

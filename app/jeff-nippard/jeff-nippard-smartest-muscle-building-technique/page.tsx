@@ -19,6 +19,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Jeff Nippard's Smartest Muscle Building Technique",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     description:
       "Jeff Nippard is a pro natural bodybuilder, powerlifter, and science communicator to over 2 million YouTube subscribers.",
     url: new URL(
-      "https://hack-wellness.vercel.app/jeff-nippard/jeff-nippard-smartest-muscle-building-technique"
+      `${BASE_URL}/jeff-nippard/jeff-nippard-smartest-muscle-building-technique`
     ),
     type: "article",
   },

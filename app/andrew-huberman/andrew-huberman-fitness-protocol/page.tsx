@@ -8,6 +8,9 @@ import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Andrew Huberman’s Fitness Protocol",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol into your routine.",
     url: new URL(
-      "https://hack-wellness.vercel.app/andrew-huberman/andrew-huberman-fitness-protocol"
+      `${BASE_URL}/andrew-huberman/andrew-huberman-fitness-protocol`
     ),
     type: "article",
   },

@@ -7,6 +7,10 @@ import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import RelatedArticles from "@/components/RelatedArticles";
 import { articles } from "@/types/Articles";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export const metadata: Metadata = {
   title: {
     default: "Peter Attia’s Fitness Protocol",
@@ -28,9 +32,7 @@ export const metadata: Metadata = {
     },
     description:
       "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
-    url: new URL(
-      "https://hack-wellness.vercel.app/peter-attia/peter-attia-fitness-protocol"
-    ),
+    url: new URL(`${BASE_URL}/peter-attia/peter-attia-fitness-protocol`),
     type: "article",
   },
 };

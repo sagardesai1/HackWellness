@@ -1,6 +1,9 @@
 import { MetadataRoute } from "next";
 import { authors } from "@/app/authors";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -8,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ["/"].concat(authors.map((author) => `/${author}`)),
       disallow: ["/auth/signIn"],
     },
-    sitemap: "https://hack-wellness.vercel.app/sitemap.xml",
+    sitemap: `${BASE_URL}/sitemap.xml`,
   };
 }

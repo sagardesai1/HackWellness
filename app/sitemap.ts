@@ -3,7 +3,8 @@ import { MetadataRoute } from "next";
 import path from "path";
 import { authors } from "@/app/authors";
 
-const BASE_URL = "https://hack-wellness.vercel.app";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Create an array of author URLs
