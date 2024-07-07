@@ -285,6 +285,7 @@ function page() {
                 <a
                   target="_blank"
                   href={"https://www.youtube.com/watch?v=OJZ4pjzwDLU"}
+                  rel="noopener noreferrer"
                   className="underline text-lg leading-8 text-indigo-600"
                 >
                   https://www.youtube.com/watch?v=OJZ4pjzwDLU

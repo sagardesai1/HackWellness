@@ -276,6 +276,7 @@ function page() {
                           <a
                             href="https://health.clevelandclinic.org/elimination-diet"
                             className="underline text-indigo-600"
+                            rel="noopener noreferrer"
                           >
                             elimination diets{" "}
                           </a>{" "}
@@ -309,6 +310,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={
                     "https://www.hubermanlab.com/episode/adhd-and-how-anyone-can-improve-their-focus "
                   }

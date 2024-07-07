@@ -190,19 +190,27 @@ function page() {
             <p className="text-2xl font-semibold">Scientific Rationale</p>
           </div>
           <ul className="mt-1 list-disc px-8 text-sm overflow-hidden underline">
-            <Link
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
               href={"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6165228/"}
             >
               <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6165228/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/27269720/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/27269720/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/27269720/</li>
-            </Link>
-            <Link
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
               href={"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430176/"}
             >
               <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430176/</li>
-            </Link>
+            </a>
           </ul>
           <div className="flex items-center gap-2 mt-4">
             <div className="bg-indigo-100 rounded-2xl p-1">
@@ -211,9 +219,13 @@ function page() {
             <p className="text-2xl font-semibold">Sources</p>
           </div>
           <ul className="mt-1 list-disc px-8 text-sm overflow-hidden underline">
-            <Link href={"https://www.hubermanlab.com/"}>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://www.hubermanlab.com/"}
+            >
               <li>https://www.hubermanlab.com/</li>
-            </Link>
+            </a>
           </ul>
         </div>
         <RelatedArticles articles={articles} />

@@ -1,19 +1,37 @@
 "use client";
+import Logo from "@/components/Logo";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import { signIn } from "next-auth/react";
+import LogoImage from "@/images/logos/logo-image.png";
+import Image from "next/image";
+import Link from "next/link";
 import { FormEvent } from "react";
 
 function SignIn() {
   return (
     <>
+      <header className="sticky top-0 z-50 bg-white border-b dark:bg-gray-900 py-2 mb-10">
+        <nav className="flex sm:flex-row items-center py-4 px-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
+          <Logo />
+        </nav>
+      </header>
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
-            className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
-          />
+          <Link
+            href="/"
+            className="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
+          >
+            <div className="flex items-center w-12 h-12">
+              <AspectRatio
+                ratio={16 / 9}
+                className="flex items-center justify-center"
+              >
+                <Image priority src={LogoImage} alt="HackWellness"></Image>
+              </AspectRatio>
+            </div>
+          </Link>
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Sign in to your account
           </h2>

@@ -188,6 +188,7 @@ function page() {
                       <a
                         target="_blank"
                         className="underline text-indigo-600"
+                        rel="noopener noreferrer"
                         href={
                           "https://www.youtube.com/watch?v=AKGrmY8OSHM&ab_channel=VirtusanApp"
                         }
@@ -273,6 +274,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={
                     "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
                   }

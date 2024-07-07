@@ -206,19 +206,37 @@ function page() {
             <p className="text-2xl font-semibold">Scientific Rationale</p>
           </div>
           <ul className="mt-1 list-disc px-8 text-sm overflow-hidden underline">
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/37015016/"}>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/37015016/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/37015016/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/34616309/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/34616309/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/34616309/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/23625461/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/23625461/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/23625461/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/35819335/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/35819335/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/35819335/</li>
-            </Link>
-            <Link
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
               href={
                 "https://www.researchgate.net/publication/325298118_Triceps_Brachii_Muscle_Strength_and_Architectural_Adaptations_with_Resistance_Training_Exercises_at_Short_or_Long_Fascicle_Length"
               }
@@ -226,27 +244,53 @@ function page() {
               <li>
                 https://www.researchgate.net/publication/325298118_Triceps_Brachii_Muscle_Strength_and_Architectural_Adaptations_with_Resistance_Training_Exercises_at_Short_or_Long_Fascicle_Length
               </li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/33009197/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/33009197/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/33009197/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/36828324/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/36828324/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/36828324/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/37015016/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/37015016/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/37015016/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/33465838/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/33465838/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/33465838/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/33977835/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/33977835/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/33977835/</li>
-            </Link>
-            <Link href={"https://pubmed.ncbi.nlm.nih.gov/31034463/"}>
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://pubmed.ncbi.nlm.nih.gov/31034463/"}
+            >
               <li>https://pubmed.ncbi.nlm.nih.gov/33977835/</li>
-            </Link>
+            </a>
 
-            <Link
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
               href={
                 "https://www.ecss2006.com/ASP/CONGRESS/TOOLS/SCIENTIFIC_PROGRAMME/Session_Data.asp?myTitleShort=OP-BM25"
               }
@@ -254,7 +298,7 @@ function page() {
               <li>
                 https://www.ecss2006.com/ASP/CONGRESS/TOOLS/SCIENTIFIC_PROGRAMME/Session_Data.asp?myTitleShort=OP-BM25
               </li>
-            </Link>
+            </a>
           </ul>
           <div className="flex items-center gap-2 mt-4">
             <div className="bg-indigo-100 rounded-2xl p-1">
@@ -263,9 +307,13 @@ function page() {
             <p className="text-2xl font-semibold">Sources</p>
           </div>
           <ul className="mt-1 list-disc px-8 text-sm overflow-hidden underline">
-            <Link href={"https://jeffnippard.com/"}>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"https://jeffnippard.com/"}
+            >
               <li>https://jeffnippard.com/</li>
-            </Link>
+            </a>
           </ul>
         </div>
         <RelatedArticles articles={articles} />

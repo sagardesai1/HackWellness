@@ -92,6 +92,7 @@ function page() {
               <a
                 target="_blank"
                 className="underline text-lg leading-8 text-indigo-600"
+                rel="noopener noreferrer nofollow"
                 href="https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?crid=3CHDJPQZDNSHU&dib=eyJ2IjoiMSJ9.3BEYQDP9vQ9ELOXr9LqlI6QpxbEsrCaa3Krk-rCBHTJDCuOc6CHUK1rxj0r8yc08GIfF0U8wjxySssHNbqWqow3AEfQUD_86BVN94XPEnEcJKGqJb5Bq77QOvG4KLZ7sDlXqoFuw8Yggnhcl7IFAuCYITBdas4Tlwwz5XFBFtA03kgo8dSXIbCM9hBNB1HQ2rzyCg0IafmOo3TMPXOcIGlfmYudcQ1gZq24df5SrxWagiWdbrHE8F8uel2M1YdkZ8RK6GnOY-xyJb3lYWAVKwOU282wcwxIJP5KE-yCC58Y.EBsEPzWQqcQTqvu73hLZqn0TDhHhhcgMOEDv1B9Ex0I&dib_tag=se&keywords=blueprint+olive+oil&qid=1720048948&sprefix=blueprint+olive+oil,aps,828&sr=8-1&linkCode=sl1&tag=hackwellnes0c-20&linkId=b641f1f23d9329580db514426e7a2f00&language=en_US&ref_=as_li_ss_tl"
               >
                 Snake Oil
@@ -166,6 +167,7 @@ function page() {
                   href={
                     "https://www.youtube.com/watch?v=bYLkSXq54k4&ab_channel=BryanJohnson"
                   }
+                  rel="noopener noreferrer"
                   className="underline text-lg leading-8 text-indigo-600"
                 >
                   https://www.youtube.com/watch?v=bYLkSXq54k4&ab_channel=BryanJohnson
@@ -174,6 +176,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7468912/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -183,6 +186,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/34716791/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -192,6 +196,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/31378629/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -201,6 +206,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9736478/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -210,6 +216,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/35258870/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -219,6 +226,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/28808791/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -228,6 +236,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/34372670/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >
@@ -237,6 +246,7 @@ function page() {
               <li className="mt-2">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={"https://pubmed.ncbi.nlm.nih.gov/34358723/"}
                   className="underline text-lg leading-8 text-indigo-600"
                 >

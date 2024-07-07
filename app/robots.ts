@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: ["/"].concat(authors.map((author) => `/${author}`)),
-      disallow: [],
+      disallow: ["/auth/signIn"],
     },
     sitemap: "https://hack-wellness.vercel.app/sitemap.xml",
   };

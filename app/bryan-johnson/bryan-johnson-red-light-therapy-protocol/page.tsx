@@ -98,6 +98,7 @@ function page() {
                           light at wavelengths of 630 nm and 830 nm.{" "}
                           <a
                             target="_blank"
+                            rel="noopener noreferrer nofollow"
                             href={
                               "https://www.amazon.com/dp/B097NGSQJZ?&linkCode=sl1&tag=hackwellnes0c-20&linkId=ab1f782be32aa104c672969a0949d352&language=en_US&ref_=as_li_ss_tl"
                             }
@@ -111,6 +112,7 @@ function page() {
                           as{" "}
                           <a
                             target="_blank"
+                            rel="noopener noreferrer nofollow"
                             href={
                               "https://www.amazon.com/Infrared-Adjustable-Clinical-Performance-HGPRO300/dp/B08Z73FNZN?dib=eyJ2IjoiMSJ9.GfY8oQ_xyRQ2x9PPFzeyDHoJo4vw7KChulRxx2YonFMNwIfaM_MuevlNCoZRIz9YymOAiVmBnRUQHEa9OuaywoMp19Vh64JrF2FfDOWkFivjeaOkmcBGMvU-L8QjFSjt4BUT1mMyS6JeSRePp1zPiXr9OVOT3ejQg8tLaqcEwCZSkJRg_eM9Ae0m9OecfVOdjEh3f8xWXvudHupJO45-TcUcPl41kbGuoP49MwABPR556hsn299n35mD2MOkXAV4UAJig3zpHuEXwLAmF9vYAJEn5m-03tZSqGr64Mbesi0.4xvbkEzvCdsgMb9LBKuaZz1DM91DKrYJTu0SvbFs_ZM&dib_tag=se&keywords=red+light+therapy+panel&qid=1719987582&sr=8-9&linkCode=sl1&tag=hackwellnes0c-20&linkId=8498914bd420aae379926db2a762d44f&language=en_US&ref_=as_li_ss_tl"
                             }
@@ -160,6 +162,7 @@ function page() {
                           <a
                             target="_blank"
                             href={"https://recharge.health/"}
+                            rel="noopener noreferrer"
                             className="underline text-lg leading-8 text-indigo-600"
                           >
                             FlexBeam
@@ -205,6 +208,7 @@ function page() {
                           Bryan Johnson uses a cap called{" "}
                           <a
                             target="_blank"
+                            rel="noopener noreferrer nofollow"
                             href={
                               "https://www.amazon.com/Capillus-Bluetooth-enabled-Thinning-Androgenetic/dp/B0BSP3NJ4X?&linkCode=sl1&tag=hackwellnes0c-20&linkId=0f46d64972522c841aa30fec6c93de3e&language=en_US&ref_=as_li_ss_tl"
                             }

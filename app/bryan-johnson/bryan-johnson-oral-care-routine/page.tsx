@@ -98,28 +98,60 @@ function page() {
             >
               <li>Water flosser</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/4aScRMf"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/4aScRMf"}
+            >
               <li>Oral-B Toothbrush</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/3yQWQsE"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/3yQWQsE"}
+            >
               <li>Soft toothbrush heads</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/3VtyGgs"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/3VtyGgs"}
+            >
               <li>Mouthwash</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/4eo1rmv"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/4eo1rmv"}
+            >
               <li>Sensodyne Toothpaste</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/3VqsjKV"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/3VqsjKV"}
+            >
               <li>Dr. Collins Biomin Tooth Sensitivity Toothpaste</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/4bOeWtL"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/4bOeWtL"}
+            >
               <li>DrTungs Floss</li>
             </a>
-            <a target="_blank" href={"https://amzn.to/3Ksewxg"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://amzn.to/3Ksewxg"}
+            >
               <li>DrTungs Tongue Scraper</li>
             </a>
-            <a target="_blank" href={"https://somnomed.com"}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href={"https://somnomed.com"}
+            >
               <li>SomnoDent Bruxism Device</li>
             </a>
           </ul>

@@ -305,6 +305,7 @@ function page() {
                     "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
                   }
                   className="underline text-lg leading-8 text-indigo-600"
+                  rel="noopener noreferrer"
                 >
                   https://www.hubermanlab.com/newsletter/foundational-fitness-protocol
                 </a>
