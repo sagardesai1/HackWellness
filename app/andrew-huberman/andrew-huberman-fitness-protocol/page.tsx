@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     template: `%s | Andrew Huberman’s Fitness Protocol`,
   },
   description:
-    "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol into your routine.",
+    "Andrew Huberman’s Fitness protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
   keywords: [
-    "Andrew Huberman",
-    "Andrew Huberman’s Fitness Protocol",
-    "Fitness Protocol",
+    "Andrew Huberman fitness protocol",
+    "Andrew Huberman workout routine",
+    "Andrew Huberman foundational fitness",
   ],
   openGraph: {
     title: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       template: `%s | Andrew Huberman’s Fitness Protocol`,
     },
     description:
-      "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol into your routine.",
+      "Andrew Huberman’s Fitness protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
     url: new URL(
       `${BASE_URL}/andrew-huberman/andrew-huberman-fitness-protocol`
     ),

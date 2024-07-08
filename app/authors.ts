@@ -1,6 +1,1 @@
-export const authors = [
-  "andrew-huberman",
-  "jeff-nippard",
-  "bryan-johnson",
-  "peter-attia",
-];
+export const authors = ["andrew-huberman", "bryan-johnson", "peter-attia"];

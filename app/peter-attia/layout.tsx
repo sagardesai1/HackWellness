@@ -7,16 +7,19 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: { default: "Peter Attia", template: `%s | Peter Attia` },
-  description: "Peter Attia articles.",
+  description:
+    "Peter Attia is a longevity expert and has his own practice for helping clients reverse their aging. Here are articles on his routines and protocols.",
   keywords: [
-    "Peter Attia",
-    "Biohacker",
-    "Fitness Protocol",
-    "Longevity expert",
+    "Peter Attia routines",
+    "Peter Attia protocols",
+    "Peter Attia longevity expert",
+    "Peter Attia’s fitness protocol",
+    "Peter Attia’s workout routine",
   ],
   openGraph: {
     title: { default: "Peter Attia", template: `%s | Peter Attia` },
-    description: "Peter Attia articles.",
+    description:
+      "Peter Attia is a longevity expert and has his own practice for helping clients reverse their aging. Here are articles on his routines and protocols",
     url: new URL(`${BASE_URL}/peter-attia`),
     type: "website",
   },

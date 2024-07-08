@@ -7,18 +7,19 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: { default: "Bryan Johnson", template: `%s | Bryan Johnson` },
-  description: "Bryan Johnson articles.",
+  description:
+    "Bryan Johnson is a longevity expert and has spent millions of dollars on refining blueprint. Here are articles on Bryan Johnson's routines.",
   keywords: [
-    "Bryan Johnson",
-    "Bryan Johnson Biohacker",
-    "Bryan Johnson Morning Routine",
-    "Bryan Johnson Red Light Therapy Protocol",
-    "Bryan Johnson Olive Oil Criteria",
-    "Bryan Johnson Oral Care Routine",
+    "Bryan Johnson routines",
+    "Bryan Johnson protocols",
+    "Bryan Johnson morning Routine",
+    "Bryan Johnson red light therapy protocol",
+    "Bryan Johnson olive oil criteria",
   ],
   openGraph: {
     title: { default: "Bryan Johnson", template: `%s | Bryan Johnson` },
-    description: "Bryan Johnson articles.",
+    description:
+      "Bryan Johnson is a longevity expert and has spent millions of dollars on refining blueprint. Here are articles on Bryan Johnson's routines.",
     url: new URL(`${BASE_URL}/bryan-johnson`),
     type: "website",
   },

@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     template: `%s | Bryan Johnson’s Red Light Therapy Protocol`,
   },
   description:
-    "Wondering if red light therapy lives up to the hype? Research suggests it might be worth it as it has shown to have multiple benefits such as improved mitochondrial function, reduced inflammation, and supported collagen production. Here’s a look at Bryan Johnson’s protocol to help you find the right product and dosing.",
+    "Bryan Johnson uses red light to improve anti aging benefits. Here’s a look at Bryan Johnson’s light therapy protocol including right product and dosing.",
   keywords: [
-    "Bryan Johnson",
-    "Bryan Johnson’s Red Light Therapy",
-    "Bryan Johnson Anti Aging",
-    "Bryan Johnson’s Red Light Therapy Protocol",
+    "Bryan Johnson red light therapy",
+    "Bryan Johnson light therapy",
+    "Bryan Johnson anti aging",
+    "Bryan Johnson red light therapy protocol",
   ],
   openGraph: {
     title: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       template: `%s | Bryan Johnson’s Red Light Therapy Protocol`,
     },
     description:
-      "Wondering if red light therapy lives up to the hype? Research suggests it might be worth it as it has shown to have multiple benefits such as improved mitochondrial function, reduced inflammation, and supported collagen production. Here’s a look at Bryan Johnson’s protocol to help you find the right product and dosing.",
+      "Bryan Johnson uses red light to improve anti aging benefits. Here’s a look at Bryan Johnson’s light therapy protocol including right product and dosing.",
     url: new URL(
       `${BASE_URL}/bryan-johnson/bryan-johnson-red-light-therapy-protocol`
     ),

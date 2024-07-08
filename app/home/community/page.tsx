@@ -12,10 +12,11 @@ function page() {
       <div className="justify-center align-center text-center">
         <a
           target="_blank"
-          href={"https://discord.gg/UyHn2cps"}
+          href={"https://discord.gg/WUtC8Rxq"}
+          rel="noopener noreferrer"
           className="mb-8 lg:mb-16 font-light text-center text-indigo-500 dark:text-gray-400 sm:text-xl underline"
         >
-          https://discord.gg/UyHn2cps
+          https://discord.gg/WUtC8Rxq
         </a>
       </div>
       <div className="mt-16 flow-root sm:mt-24">

@@ -33,7 +33,7 @@ export const articles: Article[] = [
     href: "/peter-attia/peter-attia-fitness-protocol",
     title: "Peter Attia’s Fitness Protocol",
     description:
-      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+      "Peter Attia's fitness protocol for longevity includes stability, strength, zone 2, V02 Max, and the Attia Rule. Here's a look at Peter Attia's workout routine.",
     image:
       "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F979dd659-080c-4924-b183-3a9c2ff9d928.jpg?crop=5000%2C2813%2C0%2C260&resize=1200",
     readLength: "4 minutes",

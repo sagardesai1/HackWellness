@@ -14,7 +14,10 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: { default: "HackWellness", template: `%s | HackWellness` },
+  title: {
+    default: "Wellness Hacks from your favorite biohackers",
+    template: `%s | HackWellness`,
+  },
   description:
     "Build your personalized protocol based on the advice of renowned biohackers like Andrew Huberman, Bryan Johnson, and Peter Attia.",
   keywords: [
@@ -24,13 +27,15 @@ export const metadata: Metadata = {
     "Andrew Huberman",
     "Bryan Johnson",
     "Peter Attia",
-    "Jeff Nippard",
   ],
   verification: {
     google: `${process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}`,
   },
   openGraph: {
-    title: { default: "HackWellness", template: `%s | HackWellness` },
+    title: {
+      default: "Wellness Hacks from your favorite biohackers",
+      template: `%s | HackWellness`,
+    },
     description:
       "Build your personalized protocol based on the advice of renowned biohackers like Andrew Huberman, Bryan Johnson, and Peter Attia.",
     url: new URL(BASE_URL),

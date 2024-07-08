@@ -17,14 +17,11 @@ export const metadata: Metadata = {
     template: `%s | Bryan Johnson's Morning Routine`,
   },
   description:
-    "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
+    "Bryan Johnson dedicates 3-4 hour for his morning routines. Here are all of his suggestions in the exact order that he does them from his routine.",
   keywords: [
-    "Bryan Johnson",
-    "Morning Routine",
-    "Bryan Johnson Morning Routine",
-    "Bryan Johnson supplements",
-    "Bryan Johnson red light therapy",
-    "Bryan Johnson blue light therapy",
+    "Bryan Johnson morning routine",
+    "Bryan Johnson morning protocol",
+    "Bryan Johnson routine",
   ],
   openGraph: {
     title: {
@@ -32,7 +29,7 @@ export const metadata: Metadata = {
       template: `%s | Bryan Johnson's Morning Routine`,
     },
     description:
-      "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
+      "Bryan Johnson dedicates 3-4 hour for his morning routines. Here are all of his suggestions in the exact order that he does them from his routine.",
     url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-morning-routine`),
     type: "article",
   },

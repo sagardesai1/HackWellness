@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     template: `%s | Bryan Johnson's Olive Oil Criteria`,
   },
   description:
-    "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
+    "Bryan Johnson's #1 suggestion to reversing aging is extra virgin olive oil. Here is the criteria for buying the correct olive oil and the product he uses.",
   keywords: [
-    "Bryan Johnson",
-    "Olive Oil Criteria",
-    "Bryan Johnson Olive Oil Criteria",
-    "Bryan Johnson Anti aging food",
+    "Bryan Johnson olive oil",
+    "Bryan Johnson olive oil criteria",
+    "Bryan Johnson anti aging food",
+    "Blueprint olive oil",
   ],
   openGraph: {
     title: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       template: `%s | Bryan Johnson's Olive Oil Criteria`,
     },
     description:
-      "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
+      "Bryan Johnson's #1 suggestion to reversing aging is extra virgin olive oil. Here is the criteria for buying the correct olive oil and the product he uses.",
     url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-olive-oil-criteria`),
     type: "article",
   },

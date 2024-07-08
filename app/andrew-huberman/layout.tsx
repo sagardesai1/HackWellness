@@ -7,18 +7,19 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: { default: "Andrew Huberman", template: `%s | Andrew Huberman` },
-  description: "Andrew Huberman articles.",
+  description:
+    "Andrew Huberman is a neuroscientist and hosts a podcast Huberman Labs where he explores science backed biohacking techniques. Here are articles on his routines.",
   keywords: [
     "Andrew Huberman",
-    "Biohacker",
-    "Andrew Huberman Fitness Protocol",
-    "Andrew Huberman Sleep Protocol",
-    "Andrew Huberman ADHD Protocol",
-    "Quickly Improve Focus",
+    "Andrew Huberman fitness protocol",
+    "Andrew Huberman workout routine",
+    "Andrew Huberman sleep protocol",
+    "Andrew Huberman ADHD protocol",
   ],
   openGraph: {
     title: { default: "Andrew Huberman", template: `%s | Andrew Huberman` },
-    description: "Andrew Huberman articles.",
+    description:
+      "Andrew Huberman is a neuroscientist and hosts a podcast Huberman Labs where he explores science backed biohacking techniques. Here are articles on his routines.",
     url: new URL(`${BASE_URL}/andrew-huberman`),
     type: "website",
   },

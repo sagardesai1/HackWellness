@@ -4,11 +4,15 @@ import React from "react";
 
 function NewsLetter() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js";
-    script.async = true;
-    document.getElementById("getWaitlistContainer")?.appendChild(script);
+    // Check if the script is already added
+    if (!document.getElementById("getWaitlistScript")) {
+      const script = document.createElement("script");
+      script.id = "getWaitlistScript";
+      script.src =
+        "https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (

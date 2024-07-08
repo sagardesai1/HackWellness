@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     template: `%s | Andrew Huberman's Sleep Protocol`,
   },
   description:
-    "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
+    "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
   keywords: [
-    "Andrew Huberman",
-    "Andrew Huberman Sleep",
-    "Andrew Huberman Sleep Protocol",
-    "Sleep Protocol",
+    "Andrew Huberman sleep",
+    "Andrew Huberman sleep protocol",
+    "Andrew Huberman sleep cocktail",
+    "Andrew Huberman sleep routine",
   ],
   openGraph: {
     title: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       template: `%s | Andrew Huberman's Sleep Protocol`,
     },
     description:
-      "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
+      "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
     url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-sleep-protocol`),
     type: "article",
   },

@@ -28,14 +28,6 @@ const posts: Post[] = [
       "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
     category: "Anti Aging",
   },
-  {
-    id: 4,
-    title: "Oral Care Routine",
-    href: "bryan-johnson/bryan-johnson-oral-care-routine",
-    description:
-      "How Bryan Johnson fixed his terrible oral health in just 7 steps.",
-    category: "Oral Care",
-  },
 
   // More posts...
 ];
@@ -51,9 +43,9 @@ export default function Example() {
             className="h-24 w-24 rounded-full bg-gray-50 "
           />
           <div className="flex flex-col ">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Articles on Bryan Johnson
-            </h2>
+            </h1>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Learn how to elevate your routines with expert advice.
             </p>

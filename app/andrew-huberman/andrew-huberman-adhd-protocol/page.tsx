@@ -13,16 +13,15 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Huberman's ADHA Protocol",
-    template: `%s | Andrew Huberman's ADHA Protocol`,
+    default: "Andrew Huberman's ADHD Protocol",
+    template: `%s | Andrew Huberman's ADHD Protocol`,
   },
   description:
-    "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Also, being able to hyper-focus on tasks that capture your interest is another tell-tale ADHD trait. Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. ",
+    "Andrew Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. Here are some of his tips on managing ADHD.",
   keywords: [
-    "Andrew Huberman",
-    "Andrew Huberman ADHA",
-    "Andrew Huberman ADHA Protocol",
-    "ADHA Protocol",
+    "Andrew Huberman ADHD",
+    "Andrew Huberman ADHD protocol",
+    "Andrew Huberman focus",
   ],
   openGraph: {
     title: {
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
       template: `%s | Andrew Huberman's ADHD Protocol`,
     },
     description:
-      "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Also, being able to hyper-focus on tasks that capture your interest is another tell-tale ADHD trait. Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. ",
+      "Andrew Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. Here are some of his tips on managing ADHD.",
     url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-adhd-protocol`),
     type: "article",
   },

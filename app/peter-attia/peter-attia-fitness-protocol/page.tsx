@@ -17,21 +17,15 @@ export const metadata: Metadata = {
     template: `%s | Peter Attia’s Fitness Protocol`,
   },
   description:
-    "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
-  keywords: [
-    "Peter Attia",
-    "Biohacker",
-    "Fitness Protocol",
-    "Longevity expert",
-    "Peter Attia fitness",
-  ],
+    "Peter Attia's fitness protocol for longevity includes stability, strength, zone 2, V02 Max, and the Attia Rule. Here's a look at Peter Attia's workout routine.",
+  keywords: ["Peter Attia fitness protocol", "Peter Attia workout routine"],
   openGraph: {
     title: {
       default: "Peter Attia’s Fitness Protocol",
       template: `%s | Peter Attia`,
     },
     description:
-      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+      "Peter Attia's fitness protocol for longevity includes stability, strength, zone 2, V02 Max, and the Attia Rule. Here's a look at Peter Attia's workout routine.",
     url: new URL(`${BASE_URL}/peter-attia/peter-attia-fitness-protocol`),
     type: "article",
   },
@@ -75,10 +69,9 @@ function page() {
             Peter Attia’s Fitness Protocol
           </h1>
           <p className="text-lg leading-8 text-gray-600">
-            Peter Attia is a longevity expert, author of book Outlive, and host
-            of podcast The Drive. He is a medical doctor and has his own private
-            practice Early Medical where he works on improving the longevity of
-            his patients.
+            Peter Attia's fitness protocol for longevity includes stability,
+            strength, zone 2, V02 Max, and the Attia Rule. Here's a look at
+            Peter Attia's workout routine:
           </p>
           <div className="mt-16">
             <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">

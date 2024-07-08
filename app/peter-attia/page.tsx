@@ -9,7 +9,7 @@ const posts: Post[] = [
     title: "Fitness Protocol",
     href: "peter-attia/peter-attia-fitness-protocol",
     description:
-      "Peter Attia is a longevity expert, author of book Outlive, and host of podcast The Drive. He is a medical doctor and has his own private practice Early Medical where he works on improving the longevity of his patients.",
+      "Peter Attia's fitness protocol for longevity includes stability, strength, zone 2, V02 Max, and the Attia Rule. Here's a look at Peter Attia's workout routine.",
     category: "Fitness",
   },
 
@@ -30,9 +30,9 @@ export default function Example() {
             }}
           />
           <div className="flex flex-col ">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Articles on Peter Attia
-            </h2>
+            </h1>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Learn how to elevate your routines with expert advice.
             </p>

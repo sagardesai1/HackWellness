@@ -73,14 +73,6 @@ function HeaderSidebar() {
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                     <Link
-                      href="/jeff-nippard"
-                      className="flex items-center justify-between space-x-2"
-                    >
-                      <span>Jeff Nippard</span>
-                      <ChevronRight className="w-5 h-5" />
-                    </Link>
-
-                    <Link
                       href="/peter-attia"
                       className="flex items-center justify-between space-x-2"
                     >
