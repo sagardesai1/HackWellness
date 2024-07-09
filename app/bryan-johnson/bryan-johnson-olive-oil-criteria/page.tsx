@@ -13,8 +13,8 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: {
-    default: "Bryan Johnson's Olive Oil Criteria",
-    template: `%s | Bryan Johnson's Olive Oil Criteria`,
+    default: "Bryan Johnson’s Olive Oil Criteria",
+    template: `%s | Bryan Johnson’s Olive Oil Criteria`,
   },
   description:
     "Bryan Johnson's #1 suggestion to reversing aging is extra virgin olive oil. Here is the criteria for buying the correct olive oil and the product he uses.",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: {
-      default: "Bryan Johnson's Olive Oil Criteria",
-      template: `%s | Bryan Johnson's Olive Oil Criteria`,
+      default: "Bryan Johnson’s Olive Oil Criteria",
+      template: `%s | Bryan Johnson’s Olive Oil Criteria`,
     },
     description:
       "Bryan Johnson's #1 suggestion to reversing aging is extra virgin olive oil. Here is the criteria for buying the correct olive oil and the product he uses.",

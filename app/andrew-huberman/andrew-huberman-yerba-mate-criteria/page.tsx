@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     template: `%s | Andrew Huberman’s Yerba Mate Criteria`,
   },
   description:
-    "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
+    "Andrew Huberman drinks yerba mate instead of coffee due to its health benefits. Here is what product he uses and his buying criteria.",
   keywords: [
-    "Andrew Huberman sleep",
-    "Andrew Huberman sleep protocol",
-    "Andrew Huberman sleep cocktail",
-    "Andrew Huberman sleep routine",
+    "Andrew Huberman yerba mate",
+    "Andrew Huberman yerba mate brand",
+    "Andrew Huberman mateina",
+    "Andrew Huberman coffee",
   ],
   openGraph: {
     title: {
@@ -30,8 +30,10 @@ export const metadata: Metadata = {
       template: `%s | Andrew Huberman’s Yerba Mate Criteria`,
     },
     description:
-      "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
-    url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-sleep-protocol`),
+      "Andrew Huberman drinks yerba mate instead of coffee due to its health benefits. Here is what product he uses and his buying criteria.",
+    url: new URL(
+      `${BASE_URL}/andrew-huberman/andrew-huberman-yerba-mate-criteria`
+    ),
     type: "article",
   },
 };

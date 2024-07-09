@@ -13,11 +13,11 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Huberman's Sleep Protocol",
-    template: `%s | Andrew Huberman's Sleep Protocol`,
+    default: "Andrew Huberman’s Sleep Protocol",
+    template: `%s | Andrew Huberman’s Sleep Protocol`,
   },
   description:
-    "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
+    "Andrew Huberman says high quality sleep is essential for good health. Here are his top ten tips for improving your sleep quality.",
   keywords: [
     "Andrew Huberman sleep",
     "Andrew Huberman sleep protocol",
@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: {
-      default: "Andrew Huberman's Sleep Protocol",
-      template: `%s | Andrew Huberman's Sleep Protocol`,
+      default: "Andrew Huberman’s Sleep Protocol",
+      template: `%s | Andrew Huberman’s Sleep Protocol`,
     },
     description:
-      "Andrew Huberman strongly promotes sleep for health, productivity, and overall well-being. Here are his top ten tips for improving your sleep quality.",
+      "Andrew Huberman says high quality sleep is essential for good health. Here are his top ten tips for improving your sleep quality.",
     url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-sleep-protocol`),
     type: "article",
   },

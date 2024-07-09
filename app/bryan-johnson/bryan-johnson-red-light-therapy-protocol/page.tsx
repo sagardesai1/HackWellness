@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s | Bryan Johnson’s Red Light Therapy Protocol`,
   },
   description:
-    "Bryan Johnson uses red light to improve anti aging benefits. Here’s a look at Bryan Johnson’s light therapy protocol including right product and dosing.",
+    "Bryan Johnson uses red light for its anti aging benefits. Here’s what products he uses and the dosages he uses.",
   keywords: [
     "Bryan Johnson red light therapy",
     "Bryan Johnson light therapy",

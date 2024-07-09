@@ -13,11 +13,11 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: {
-    default: "Bryan Johnson's Morning Routine",
-    template: `%s | Bryan Johnson's Morning Routine`,
+    default: "Bryan Johnson’s Morning Routine",
+    template: `%s | Bryan Johnson’s Morning Routine`,
   },
   description:
-    "Bryan Johnson dedicates 3-4 hour for his morning routines. Here are all of his suggestions in the exact order that he does them from his routine.",
+    "Bryan Johnson dedicates 3-4 hours for his morning routine. Here are all of his suggestions in the exact order that he does them every morning.",
   keywords: [
     "Bryan Johnson morning routine",
     "Bryan Johnson morning protocol",
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: {
-      default: "Bryan Johnson's Morning Routine",
-      template: `%s | Bryan Johnson's Morning Routine`,
+      default: "Bryan Johnson’s Morning Routine",
+      template: `%s | Bryan Johnson’s Morning Routine`,
     },
     description:
-      "Bryan Johnson dedicates 3-4 hour for his morning routines. Here are all of his suggestions in the exact order that he does them from his routine.",
+      "Bryan Johnson dedicates 3-4 hours for his morning routine. Here are all of his suggestions in the exact order that he does them every morning.",
     url: new URL(`${BASE_URL}/bryan-johnson/bryan-johnson-morning-routine`),
     type: "article",
   },

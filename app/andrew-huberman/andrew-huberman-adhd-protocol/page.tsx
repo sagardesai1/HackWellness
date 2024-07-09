@@ -13,11 +13,11 @@ const BASE_URL =
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Huberman's ADHD Protocol",
-    template: `%s | Andrew Huberman's ADHD Protocol`,
+    default: "Andrew Huberman’s ADHD Protocol",
+    template: `%s | Andrew Huberman’s ADHD Protocol`,
   },
   description:
-    "Andrew Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. Here are some of his tips on managing ADHD.",
+    "Andrew Huberman suggests that the key to managing ADHD is to maintain high levels of dopamine. Here’s his advice on how to do this.",
   keywords: [
     "Andrew Huberman ADHD",
     "Andrew Huberman ADHD protocol",
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: {
-      default: "Andrew Huberman's ADHD Protocol",
-      template: `%s | Andrew Huberman's ADHD Protocol`,
+      default: "Andrew Huberman’s ADHD Protocol",
+      template: `%s | Andrew Huberman’s ADHD Protocol`,
     },
     description:
-      "Andrew Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine. Here are some of his tips on managing ADHD.",
+      "Andrew Huberman suggests that the key to managing ADHD is to maintain high levels of dopamine. Here’s his advice on how to do this.",
     url: new URL(`${BASE_URL}/andrew-huberman/andrew-huberman-adhd-protocol`),
     type: "article",
   },

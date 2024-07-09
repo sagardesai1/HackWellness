@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: "Peter Attia’s Fitness Protocol",
-      template: `%s | Peter Attia`,
+      template: `%s | Peter Attia’s Fitness Protocol`,
     },
     description:
       "Peter Attia's fitness protocol for longevity includes stability, strength, zone 2, V02 Max, and the Attia Rule. Here's a look at Peter Attia's workout routine.",

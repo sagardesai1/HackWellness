@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s | Andrew Huberman’s Fitness Protocol`,
   },
   description:
-    "Andrew Huberman’s Fitness protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
+    "Andrew Huberman’s workout protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
   keywords: [
     "Andrew Huberman fitness protocol",
     "Andrew Huberman workout routine",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       template: `%s | Andrew Huberman’s Fitness Protocol`,
     },
     description:
-      "Andrew Huberman’s Fitness protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
+      "Andrew Huberman’s workout protocol is designed to help you achieve your fitness goals efficiently. Here's how you can implement this protocol into your routine.",
     url: new URL(
       `${BASE_URL}/andrew-huberman/andrew-huberman-fitness-protocol`
     ),
