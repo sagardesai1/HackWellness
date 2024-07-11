@@ -49,7 +49,7 @@ function ArticleSidebar() {
                 width="100%"
                 xmlSpace="preserve"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlnsSerif="http://www.serif.com/"
+                // xmlnsSerif="http://www.serif.com/"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               >
                 <g>
