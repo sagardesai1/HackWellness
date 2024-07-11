@@ -76,7 +76,7 @@ function page() {
               </div>
             </div>
           </header>
-          <h1 className="mt-8 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+          <h1 className="mt-8 text-3xl font-extrabold leading-8 text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
             Bryan Johnson's Morning Routine
           </h1>
           <p className="text-lg leading-8 text-gray-600">
@@ -88,7 +88,7 @@ function page() {
             <div className="mt-10 leading-8 ">
               <ol className="list-decimal pl-5">
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Wake Up with No Alarm</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal">
                       Don’t rely on an alarm clock to wake up so that you are
@@ -108,7 +108,7 @@ function page() {
                   </figure>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">UV Light Therapy</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       If you wake up before sunrise, use a UV light to help
@@ -118,7 +118,7 @@ function page() {
                   </li>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Morning Supplements - Part 1</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Take the following two supplements upon waking together:
@@ -146,7 +146,7 @@ function page() {
                   </li>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Blue Light Therapy</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Bryan Johnson does 5 minutes of blue light therapy to keep
@@ -155,7 +155,7 @@ function page() {
                   </li>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Meditation</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Bryan Johnson does ten minutes of meditation to enhance
@@ -164,7 +164,7 @@ function page() {
                   </li>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Dry Eyes Therapy</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Bryan Johnson spends 30 seconds using a device that
@@ -181,7 +181,7 @@ function page() {
                   </div>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Morning Supplements - Part 2</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Take your key supplements before breakfast, with a green
@@ -263,7 +263,7 @@ function page() {
                   </figure>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Red Light Therapy</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Wearing a red light cap, Bryan Johnson uses red light
@@ -272,7 +272,7 @@ function page() {
                   </li>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Morning Workout Routine</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Bryan Johnson’s workout routine usually lasts 45-60
@@ -292,7 +292,7 @@ function page() {
                   </figure>
                 </div>
                 <div className="mb-8">
-                  <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                     <span className="">Breakfast</span>{" "}
                     <div className="text-gray-600 text-lg mt-4 font-normal	">
                       Right after your workout, eat breakfast. Bryan Johnson has
@@ -315,7 +315,7 @@ function page() {
             </p>
           </div>
           <div className="mt-20 mb-40">
-            <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
+            <p className="mb-2 text-2xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-3xl dark:text-white overflow-hidden">
               Sources
             </p>
             <ul className="list-disc pl-5 mt-5">

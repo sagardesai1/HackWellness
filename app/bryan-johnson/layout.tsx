@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "Bryan Johnson morning Routine",
     "Bryan Johnson red light therapy protocol",
     "Bryan Johnson olive oil criteria",
+    "Bryan Johnson oral routine",
   ],
   openGraph: {
     title: { default: "Bryan Johnson", template: `%s | Bryan Johnson` },

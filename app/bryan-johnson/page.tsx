@@ -28,6 +28,15 @@ const posts: Post[] = [
       "What’s the best food you can eat to slow down your speed of aging? According to Bryan Johnson olive oil is it. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
     category: "Anti Aging",
   },
+  {
+    id: 4,
+    title: "Oral routine",
+    href: "bryan-johnson/bryan-johnson-oral-routine",
+
+    description:
+      "Bryan Johnson’s oral routine has helped him fix his rotting teeth and reverse age his gums such that his dentist now tells him he has the gums of a healthy teenager. If you’re looking to up your dental game, follow these steps for a healthier, brighter smile.",
+    category: "Oral care",
+  },
 
   // More posts...
 ];
