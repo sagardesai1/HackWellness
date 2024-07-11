@@ -24,8 +24,7 @@ function Footer() {
               </div>
             </Link>
             <span className="block text-sm  text-gray-500 dark:text-gray-400">
-              Making the world a better place through constructing elegant
-              hierarchies.
+              Wellness Hacks from your favorite biohackers.
             </span>
             <ul className="flex mt-5 space-x-8">
               <li>

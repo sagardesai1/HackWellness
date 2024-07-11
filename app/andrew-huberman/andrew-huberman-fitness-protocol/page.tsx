@@ -1,5 +1,6 @@
 import React from "react";
 import AndrewHubermanAvatar from "@/images/AuthorImages/AndrewHuberman.jpg";
+import AndrewHubermanAtGym from "@/images/AndrewHubermanImages/AndrewHubermanAtGym.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -7,6 +8,8 @@ import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
+import YoutubePlayer from "@/components/YoutubePlayer";
+import ArticleSidebar from "@/components/ArticleSidebar";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
@@ -41,7 +44,7 @@ function page() {
   return (
     <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
       <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg ">
+        <article className="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg">
           <Link href={"/andrew-huberman"}>
             <div className="flex flex-row gap-2 items-center mb-10">
               <ChevronLeft className="w-5 h-5 text-gray-800" />
@@ -77,11 +80,21 @@ function page() {
             Andrew Huberman’s Workout Routine
           </h1>
           <p className="text-lg leading-8 text-gray-600">
-            Andrew Huberman’s Foundational Fitness protocol is designed to help
-            you achieve your fitness goals efficiently. He’s been following this
-            protocol for over 20 years. Here's a breakdown of how you can
-            implement this protocol into your routine:
+            Andrew Huberman’s fitness protocol is designed to help you achieve
+            your fitness goals efficiently. He’s been following this protocol
+            for over 20 years. Here's a breakdown of how you can implement this
+            protocol:
           </p>
+          <figure className="my-14 flex flex-col items-center">
+            <Image
+              src={AndrewHubermanAtGym}
+              alt="Andrew Huberman at the gym"
+              className="rounded-lg w-full max-w-2xl"
+            />
+            <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+              Andrew Huberman at the gym
+            </figcaption>
+          </figure>
           <div className="mt-16">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 1: Long Endurance Workout
@@ -96,23 +109,14 @@ function page() {
               increase difficulty, consider using a weighted vest or backpack
               and emphasize nasal breathing when possible.
             </p>
+            <div className="my-10">
+              <YoutubePlayer
+                src="https://www.youtube.com/embed/L5J6sgQLvuE?si=TFl0uI8yLApQ9XFP"
+                title="Andrew Huberman how to do ZONE 2 cardio"
+              />
+            </div>
           </div>
-          <div className="mt-10">
-            <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
-              Day 1: Long Endurance Workout
-            </p>
-            <p className="text-lg leading-8 text-gray-600">
-              <span className="font-semibold text-black">Duration:</span> 30
-              minutes, ideally 60-75 minutes
-            </p>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              Start your week with a long zone 2 cardio workout, doing an
-              activity like jogging, rowing, cycling, swimming, or hiking. To
-              increase difficulty, consider using a weighted vest or backpack
-              and emphasize nasal breathing when possible.
-            </p>
-          </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 2: Legs Resistance Training
             </p>
@@ -127,7 +131,7 @@ function page() {
               balanced manner.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 3: Heat & Cold Exposure/Recovery
             </p>
@@ -141,7 +145,7 @@ function page() {
               resilience. Start slowly and gradually increase exposure time.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 4: Torso & Neck Resistance Training
             </p>
@@ -156,7 +160,7 @@ function page() {
               injury risk and improve posture.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 5: Moderate Intensity Cardio Training{" "}
             </p>
@@ -171,7 +175,7 @@ function page() {
               best to capitalize on sun exposure benefits.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 6: High-Intensity Interval Training (HIIT){" "}
             </p>
@@ -186,7 +190,7 @@ function page() {
               your maximum heart rate, calculated as 220 minus your age.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <p className="mb-2 text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
               Day 7: Arms, Neck & Calves Training{" "}
             </p>
@@ -211,18 +215,18 @@ function page() {
             </p>
             <div className="mt-6 text-lg leading-8 text-gray-600">
               <ol className="list-decimal pl-5">
-                <li className="mb-2">
+                <li className="mb-4">
                   Alternate between Schedule A and B each month to enhance your
                   strength and muscle hypertrophy.:
                   <ul className="list-disc pl-5 mt-2">
-                    <li className="mt-1">
+                    <li className="mt-4">
                       <span className="font-semibold text-black">
                         Schedule A:
                       </span>{" "}
                       Perform 4-8 repetitions with heavier weights, 3-4 sets per
                       exercise, and rest for 2-4 minutes between sets.
                     </li>
-                    <li className="mt-1">
+                    <li className="mt-4">
                       <span className="font-semibold text-black">
                         Schedule B:
                       </span>{" "}
@@ -232,10 +236,10 @@ function page() {
                     </li>
                   </ul>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   Do two exercises per muscle group:
                   <ul className="list-disc pl-5 mt-2">
-                    <li className="mt-1">
+                    <li className="mt-4">
                       <span className="font-semibold text-black">
                         Exercise #1:
                       </span>{" "}
@@ -244,7 +248,7 @@ function page() {
                       seated calf raise, bicep preacher curl, leg extension,
                       chest cable crossover).
                     </li>
-                    <li className="mt-1">
+                    <li className="mt-4">
                       <span className="font-semibold text-black">
                         Exercise #2:
                       </span>{" "}
@@ -274,6 +278,12 @@ function page() {
               immediately after resistance training. According Andrew Huberman,
               saunas do not have this issue.
             </p>
+            <div className="my-8">
+              <YoutubePlayer
+                src="https://www.youtube.com/embed/5cQoVWjNG6A?si=rUxg--teFLAlaTdD"
+                title="Andrew Huberman how to ice bath properly"
+              />
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               <span className="font-semibold text-black">
                 Physiological Sigh:
@@ -316,12 +326,13 @@ function page() {
             </ul>
           </div>
         </article>
+        <ArticleSidebar />
       </div>
       <RelatedArticles articles={articles} />
       <NewsLetter />
       <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
-          href="/"
+          href="/home/goals"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Start Building Your Protocol Now

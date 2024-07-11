@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
+import ArticleSidebar from "@/components/ArticleSidebar";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
@@ -39,7 +40,7 @@ function page() {
   return (
     <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
       <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg ">
+        <article className="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg">
           <Link href={"/andrew-huberman"}>
             <div className="flex flex-row gap-2 items-center mb-10">
               <ChevronLeft className="w-5 h-5 text-gray-800" />
@@ -77,9 +78,8 @@ function page() {
           <p className="text-lg leading-8 text-gray-600">
             Ever been told you have ADHD? If you have difficulty sustaining
             attention, impulsivity, and high emotionality it’s possible that you
-            do. Also, being able to hyper-focus on tasks that capture your
-            interest is another tell-tale ADHD trait. Huberman suggests that the
-            key to managing ADHD relies on ensuring high levels of dopamine.
+            do. Andrew Huberman’s ADHD protocol relies on maintaining high
+            levels of dopamine to manage ADHD.
           </p>
           <div className="mt-14">
             <div className="mt-10 leading-8 ">
@@ -322,12 +322,13 @@ function page() {
             </ul>
           </div>
         </article>
+        <ArticleSidebar />
       </div>
       <RelatedArticles articles={articles} />
       <NewsLetter />
       <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
-          href="/"
+          href="/home/goals"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Start Building Your Protocol Now

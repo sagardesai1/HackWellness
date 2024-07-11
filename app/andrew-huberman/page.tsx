@@ -9,7 +9,7 @@ const posts: Post[] = [
     title: "Fitness Protocol",
     href: "andrew-huberman/andrew-huberman-fitness-protocol",
     description:
-      "Andrew Huberman’s Foundational Fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years.",
+      "Andrew Huberman’s fitness protocol is designed to help you achieve your fitness goals efficiently. He’s been following this protocol for over 20 years. Here's a breakdown of how you can implement this protocol.",
     category: "Fitness",
   },
   {
@@ -17,7 +17,7 @@ const posts: Post[] = [
     title: "Sleep Protocol",
     href: "andrew-huberman/andrew-huberman-sleep-protocol",
     description:
-      "Getting a good night's sleep is essential for our health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
+      "Andrew Huberman’s sleep protocol can help you level up your health, productivity, and overall well-being. Here are Andrew Huberman’s top ten tips for improving your sleep quality.",
     category: "Sleep",
   },
   {
@@ -25,7 +25,7 @@ const posts: Post[] = [
     title: "ADHD Protocol",
     href: "andrew-huberman/andrew-huberman-adhd-protocol",
     description:
-      "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Also, being able to hyper-focus on tasks that capture your interest is another tell-tale ADHD trait. Huberman suggests that the key to managing ADHD relies on ensuring high levels of dopamine.",
+      "Ever been told you have ADHD? If you have difficulty sustaining attention, impulsivity, and high emotionality it’s possible that you do. Andrew Huberman’s ADHD protocol relies on maintaining high levels of dopamine to manage ADHD.",
     category: "Mental Health",
   },
   {

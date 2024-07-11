@@ -1,5 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import StartNowBanner from "@/components/StartNowBanner";
+import UpgradeBanner from "@/components/UpgradeBanner";
 import { Metadata } from "next";
 
 const BASE_URL =

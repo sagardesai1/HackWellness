@@ -7,6 +7,11 @@ import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
+import YoutubePlayer from "@/components/YoutubePlayer";
+import BryanJohnsonTakingSupplements from "@/images/BryanJohnsonImages/BryanJohnsonTakingSupplements.png";
+import BryanJohnsonWakingUp from "@/images/BryanJohnsonImages/BryanJohnsonWakingUp.png";
+import BryanJohnsonCycling from "@/images/BryanJohnsonImages/BryanJohnsonCycling.jpg";
+import ArticleSidebar from "@/components/ArticleSidebar";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
@@ -39,7 +44,7 @@ function page() {
   return (
     <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
       <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg ">
+        <article className="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg">
           <Link href={"/bryan-johnson"}>
             <div className="flex flex-row gap-2 items-center mb-10">
               <ChevronLeft className="w-5 h-5 text-gray-800" />
@@ -75,10 +80,9 @@ function page() {
             Bryan Johnson's Morning Routine
           </h1>
           <p className="text-lg leading-8 text-gray-600">
-            Have you ever wondered how Bryan Johnson, the visionary entrepreneur
-            dedicated to anti-aging, kickstarts his day? Here are all of his
-            suggestions in the exact order that he does them from his 3-4 hour
-            morning routine.
+            Bryan Johnson’s morning routine takes him a staggering 3-4 hours to
+            finish. Here are all of the steps in the exact order that he does
+            them in:
           </p>
           <div className="mt-14">
             <div className="mt-10 leading-8 ">
@@ -92,6 +96,16 @@ function page() {
                       naturally between 4:30 and 6:00 am.
                     </div>
                   </li>
+                  <figure className="my-14 flex flex-col items-center">
+                    <Image
+                      src={BryanJohnsonWakingUp}
+                      alt="Bryan Johnson waking up"
+                      className="rounded-lg w-full max-w-2xl"
+                    />
+                    <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+                      Bryan Johnson waking up
+                    </figcaption>
+                  </figure>
                 </div>
                 <div className="mb-8">
                   <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
@@ -114,8 +128,8 @@ function page() {
                             Heme Iron (10mg):
                           </span>{" "}
                           <span className="text-gray-600">
-                            10 minutes of a stability practice; 60 minutes of
-                            lower body strength training.
+                            Supports hemoglobin production and enhances oxygen
+                            levels in the blood.
                           </span>
                         </li>
                         <li className="mt-6">
@@ -159,6 +173,12 @@ function page() {
                       and maintain long-term eye health.
                     </div>
                   </li>
+                  <div className="my-10">
+                    <YoutubePlayer
+                      src="https://www.youtube.com/embed/7pfc7ga9X6c?si=wmmWakrlFe6MgOX9"
+                      title="Bryan Johnson dry eyes therapy"
+                    />
+                  </div>
                 </div>
                 <div className="mb-8">
                   <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
@@ -231,6 +251,16 @@ function page() {
                       </ul>
                     </div>
                   </li>
+                  <figure className="my-14 flex flex-col items-center">
+                    <Image
+                      src={BryanJohnsonTakingSupplements}
+                      alt="Bryan Johnson supplements"
+                      className="rounded-lg w-full max-w-2xl"
+                    />
+                    <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+                      Bryan Johnson's supplements
+                    </figcaption>
+                  </figure>
                 </div>
                 <div className="mb-8">
                   <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
@@ -250,6 +280,16 @@ function page() {
                       High Intensity Interval training.
                     </div>
                   </li>
+                  <figure className="my-14 flex flex-col items-center">
+                    <Image
+                      src={BryanJohnsonCycling}
+                      alt="Bryan Johnson working out"
+                      className="rounded-lg w-full max-w-2xl"
+                    />
+                    <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+                      Bryan Johnson working out
+                    </figcaption>
+                  </figure>
                 </div>
                 <div className="mb-8">
                   <li className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
@@ -292,12 +332,13 @@ function page() {
             </ul>
           </div>
         </article>
+        <ArticleSidebar />
       </div>
       <RelatedArticles articles={articles} />
       <NewsLetter />
       <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
-          href="/"
+          href="/home/goals"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Start Building Your Protocol Now

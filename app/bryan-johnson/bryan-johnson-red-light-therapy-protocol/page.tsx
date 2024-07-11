@@ -7,6 +7,11 @@ import { Metadata } from "next";
 import NewsLetter from "@/components/NewsLetter";
 import { articles } from "@/types/Articles";
 import RelatedArticles from "@/components/RelatedArticles";
+import BryanJohnsonRedLightTherapy from "@/images/BryanJohnsonImages/BryanJohnsonRedLightTherapy.webp";
+import BryanJohnsonCapillus from "@/images/BryanJohnsonImages/BryanJohnsonCapillus.png";
+
+import YoutubePlayer from "@/components/YoutubePlayer";
+import ArticleSidebar from "@/components/ArticleSidebar";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL || "https://www.hack-wellness.com";
@@ -42,7 +47,7 @@ function page() {
   return (
     <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
       <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg ">
+        <article className="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg">
           <Link href={"/bryan-johnson"}>
             <div className="flex flex-row gap-2 items-center mb-10">
               <ChevronLeft className="w-5 h-5 text-gray-800" />
@@ -85,6 +90,16 @@ function page() {
             Bryan Johnson’s protocol to help you find the right product and
             dosing:
           </p>
+          <figure className="my-14 flex flex-col items-center">
+            <Image
+              src={BryanJohnsonRedLightTherapy}
+              alt="Bryan Johnson red light therapy"
+              className="rounded-lg w-full max-w-2xl"
+            />
+            <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+              Bryan Johnson red light therapy
+            </figcaption>
+          </figure>
           <div className="mt-14">
             <div className="mt-10 leading-8 ">
               <div className="mb-20">
@@ -148,6 +163,12 @@ function page() {
                         </span>
                       </li>
                     </ul>
+                  </div>
+                  <div className="my-10">
+                    <YoutubePlayer
+                      src="https://www.youtube.com/embed/MYf67TKj9BE?si=A0ALjNqvOWaHYy0C"
+                      title="Bryan Johnson full body red light therapy"
+                    />
                   </div>
                 </div>
               </div>
@@ -245,6 +266,16 @@ function page() {
                   </div>
                 </div>
               </div>
+              <figure className="my-14 flex flex-col items-center">
+                <Image
+                  src={BryanJohnsonCapillus}
+                  alt="Bryan Johnson red light therapy"
+                  className="rounded-lg w-full max-w-2xl"
+                />
+                <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
+                  Bryan Johnson Capillus
+                </figcaption>
+              </figure>
             </div>
           </div>
           <div className="mt-20 text-gray-600 text-lg font-normal">
@@ -294,12 +325,13 @@ function page() {
             </ul>
           </div>
         </article>
+        <ArticleSidebar />
       </div>
       <RelatedArticles articles={articles} />
       <NewsLetter />
       <div className="my-20 flex items-center justify-center gap-x-6">
         <Link
-          href="/"
+          href="/home/goals"
           className="flex items-center rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Start Building Your Protocol Now

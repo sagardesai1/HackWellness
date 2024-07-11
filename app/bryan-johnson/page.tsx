@@ -9,7 +9,7 @@ const posts: Post[] = [
     title: "Morning Routine",
     href: "bryan-johnson/bryan-johnson-morning-routine",
     description:
-      "Have you ever wondered how Bryan Johnson, the visionary entrepreneur dedicated to anti-aging, kickstarts his day? Here are all of his suggestions in the exact order that he does them from his 3-4 hour morning routine.",
+      "Bryan Johnson’s morning routine takes him a staggering 3-4 hours to finish. Here are all of the steps in the exact order that he does them in.",
     category: "Productivity",
   },
   {
@@ -25,7 +25,7 @@ const posts: Post[] = [
     title: "Olive Oil Criteria",
     href: "bryan-johnson/bryan-johnson-olive-oil-criteria",
     description:
-      "Ever wanted to know the #1 best food you can eat to slow down your speed of aging and reserve it? According to Bryan Johnson, the key to reverse aging is extra virgin olive. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
+      "What’s the best food you can eat to slow down your speed of aging? According to Bryan Johnson olive oil is it. Studies have shown that it helps with weight management, blood pressure, blood sugar levels, cholesterol, heart health, brain health, and mood.",
     category: "Anti Aging",
   },
 

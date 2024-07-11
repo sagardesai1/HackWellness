@@ -19,6 +19,7 @@ import UpgradeBanner from "./UpgradeBanner";
 import React from "react";
 import { cn } from "@/lib/utils";
 import HeaderSidebar from "./HeaderSidebar";
+import { ChevronRight } from "lucide-react";
 
 async function Header() {
   const session = await getServerSession(authOptions);
@@ -41,7 +42,7 @@ async function Header() {
 
           <DarkModeToggle /> */}
 
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 items-center">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -93,26 +94,10 @@ async function Header() {
             <UserButton session={session} />
             <Link
               href="/home/goals"
-              className="inline-flex items-center rounded-3xl bg-indigo-600 px-3 py-2 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="inline-flex items-center rounded-3xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Dashboard
-              <svg
-                className="w-6 h-6 text-white dark:text-gray-800"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 12H5m14 0-4 4m4-4-4-4"
-                />
-              </svg>
+              Build Protocol Now
+              <ChevronRight className="w-5 h-5" />
             </Link>
           </div>
           {/* Show the menu button on small screens */}

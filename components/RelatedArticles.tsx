@@ -17,7 +17,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({ articles }) => {
             <article className="max-w-xs" key={index}>
               <a href={article.href}>
                 <div className="w-full h-48 overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={article.image}
                     className="object-cover w-full h-full"
                     alt={`Image ${index + 1}`}
