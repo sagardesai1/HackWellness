@@ -146,7 +146,7 @@ function page() {
                           Ritalin and Adderall:
                         </span>{" "}
                         <span className="text-gray-600">
-                          PThese drugs work by increasing dopamine levels,
+                          These drugs work by increasing dopamine levels,
                           thereby enhancing focus.
                         </span>
                       </li>

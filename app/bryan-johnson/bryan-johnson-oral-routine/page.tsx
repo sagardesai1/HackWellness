@@ -261,6 +261,32 @@ function page() {
                     </div>
                   </li>
                 </div>
+                <div className="mb-8">
+                  <li className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                    <span className="">Bruxism Device</span>{" "}
+                    <div className="text-gray-600 text-lg mt-4 font-normal leading-8">
+                      For those who grind their teeth at night, a bruxism device
+                      can be a game-changer. Bryan Johnson uses a{" "}
+                      <a
+                        target="_blank"
+                        href={"https://somnomed.com/en/"}
+                        rel="noopener noreferrer nofollow"
+                        className="underline text-lg leading-8 text-indigo-600"
+                      >
+                        SomnoDent
+                      </a>{" "}
+                      mouth guard which helps stop mouth movement during sleep,
+                      thereby preventing the damage associated with teeth
+                      grinding.
+                    </div>
+                  </li>
+                  <div className="my-10">
+                    <YoutubePlayer
+                      src="https://www.youtube.com/embed/Cu2x1ayzCxw?si=A0tYAuJxDGbxNB9G"
+                      title="Bryan Johnson bruxism device"
+                    />
+                  </div>
+                </div>
               </ol>
             </div>
           </div>
