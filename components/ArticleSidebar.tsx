@@ -25,7 +25,7 @@ function ArticleSidebar() {
             </Link>
           </div>
         </div>
-        <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
+        {/* <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
           <div className="text-base font-bold leading-tight text-gray-900 dark:text-white">
             Follow us to stay updated with our posts and community
           </div>
@@ -150,7 +150,7 @@ function ArticleSidebar() {
               </svg>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
           <div className="text-base font-bold leading-tight text-gray-900 dark:text-white">
             Get the best of HackWellness delivered to your inbox

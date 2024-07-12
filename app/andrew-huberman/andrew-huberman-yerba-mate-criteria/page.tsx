@@ -77,7 +77,7 @@ function page() {
               </div>
             </div>
           </header>
-          <h1 className="mt-8 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+          <h1 className="mt-8 text-3xl font-extrabold leading-8 text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
             Andrew Huberman’s Yerba Mate Criteria
           </h1>
           <p className="text-lg leading-8 text-gray-600">
@@ -101,7 +101,7 @@ function page() {
           <div className="mt-14">
             <div className="mt-10 leading-8 ">
               <div className="mb-20">
-                <div className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                <div className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                   <span className="">Yerba Mate Health Benefits</span>{" "}
                   <div className="text-gray-600 text-lg mt-4 font-normal	">
                     Andrew Huberman says yerba mate offers several health
@@ -156,7 +156,7 @@ function page() {
                 </div>
               </div>
               <div className="mb-20">
-                <div className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                <div className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                   <span className="">
                     Andrew Huberman’s Yerba Mate Criteria
                   </span>{" "}
@@ -196,7 +196,7 @@ function page() {
                 </div>
               </div>
               <div className="mb-20">
-                <div className="text-xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
+                <div className="text-xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-2xl dark:text-white">
                   <span className="">
                     Andrew Huberman’s Yerba Mate Brand Pick
                   </span>{" "}
@@ -219,7 +219,7 @@ function page() {
             </div>
           </div>
           <div className="mt-20 mb-40">
-            <p className="mb-2 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">
+            <p className="mb-2 text-2xl font-extrabold leading-8 text-gray-900 lg:mb-4 lg:text-3xl dark:text-white">
               Sources
             </p>
             <ul className="list-disc pl-5 mt-5">

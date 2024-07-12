@@ -36,6 +36,14 @@ const posts: Post[] = [
       "Want a healthier alternative to coffee? According to Andrew Huberman yerba mate is the perfect choice. He has found that the energy boost from yerba mate is more sustained than that from coffee. Moreover, he does not have trouble falling asleep from drinking yerba mate in the late afternoon (at 2 or 3 pm), even though he usually sleeps on the earlier side (around 10 pm).",
     category: "Mental Health",
   },
+  {
+    id: 5,
+    title: "Sauna Protocol",
+    href: "andrew-huberman/andrew-huberman-sauna-protocol",
+    description:
+      "Andrew Huberman’s sauna protocols are tailored to specific health outcomes such as boosting cardiovascular health, improving mood, and stimulating growth hormone release. Let's dive into how to incorporate saunas into your routine based on each of these goals.",
+    category: "Cardiovascular Health",
+  },
 
   // More posts...
 ];
