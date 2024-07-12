@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LandingPageImage from "@/images/landingpage/hero-image.png";
+import LandingPageImage from "@/images/landingpage/FitnessScreenshot.png";
 
 function Hero() {
   return (

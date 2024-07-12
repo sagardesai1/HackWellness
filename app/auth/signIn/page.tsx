@@ -38,7 +38,7 @@ function SignIn() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form
+          {/* <form
             className="space-y-6"
             onSubmit={(e: FormEvent<HTMLFormElement>) => {
               e.preventDefault();
@@ -82,7 +82,7 @@ function SignIn() {
             <div className="py-3 flex items-center text-xs text-muted-foreground uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-700 dark:after:border-gray-700">
               Or
             </div>
-          </Separator>
+          </Separator> */}
           <div className="mt-8 grid">
             <Button variant={"outline"} onClick={() => signIn("google")}>
               <svg

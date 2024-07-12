@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "Andrew Huberman workout routine",
     "Andrew Huberman sleep protocol",
     "Andrew Huberman ADHD protocol",
+    "Andrew Huberman sauna protocol",
   ],
   openGraph: {
     title: { default: "Andrew Huberman", template: `%s | Andrew Huberman` },

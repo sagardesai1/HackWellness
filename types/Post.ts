@@ -15,4 +15,6 @@ export interface Post {
   href: string;
   description: string;
   category: string;
+  articleImage: StaticImageData;
+  articleImageAlt: string;
 }

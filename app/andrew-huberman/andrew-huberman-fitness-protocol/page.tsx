@@ -88,7 +88,7 @@ function page() {
           <figure className="my-14 flex flex-col items-center">
             <Image
               src={AndrewHubermanAtGym}
-              alt="Andrew Huberman at the gym"
+              alt="Andrew Huberman gym"
               className="rounded-lg w-full max-w-2xl"
             />
             <figcaption className="mt-2 text-lg leading-8 text-gray-600 text-center">
