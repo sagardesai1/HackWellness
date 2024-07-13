@@ -10,19 +10,22 @@ function ArticleSidebar() {
       <div className="sticky top-32 space-y-10">
         <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
           <div className="text-base font-bold leading-tight text-gray-900 dark:text-white">
-            Join our exclusive community and learn more tips and tricks from our
-            biohackers
+            Get free 1:1 coaching for personalized biohacking tips and tricks
+            from our team
           </div>
           <div className="text-gray-600 text-sm font-normal">
-            Our community is currently free right now for a limited time, join
-            now!
+            We are offering free health coaching calls for a limited time!
           </div>
           <div>
-            <Link href={"/home/goals"}>
+            <a
+              target="_blank"
+              href="https://calendly.com/arulgupta/30min"
+              rel="noopener noreferrer"
+            >
               <button className="w-full rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">
-                Get Free Access Now
+                Book Your Free 30-min Call
               </button>
-            </Link>
+            </a>
           </div>
         </div>
         {/* <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
@@ -153,10 +156,11 @@ function ArticleSidebar() {
         </div> */}
         <div className="space-y-4 border rounded-lg px-4 py-4 border-input">
           <div className="text-base font-bold leading-tight text-gray-900 dark:text-white">
-            Get the best of HackWellness delivered to your inbox
+            Get the best of HackWellness delivered straight to your inbox
           </div>
           <div className="text-gray-600 text-sm font-normal">
-            Subscribe our newsletter for latest world news. Let's stay updated!
+            Subscribe to our newsletter for the latest updates from your
+            favorite biohackers!
           </div>
           {/* <div className="relative">
             <Input
