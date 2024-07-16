@@ -59,6 +59,16 @@ const posts: Post[] = [
     articleImage: AndrewHubermanPortrait,
     articleImageAlt: "Andrew Huberman portrait",
   },
+  {
+    id: 5,
+    title: "Tongkat Ali Protocol",
+    href: "andrew-huberman/andrew-huberman-tongkat-ali-protocol",
+    description:
+      "Andrew Huberman recommends taking Tongkat Ali to increase testosterone levels and overall vitality. Here are Huberman’s key tips on how to consume this powerful herb for optimal results.",
+    category: "Testosterone",
+    articleImage: AndrewHubermanPortrait,
+    articleImageAlt: "Andrew Huberman portrait",
+  },
 
   // More posts...
 ];
