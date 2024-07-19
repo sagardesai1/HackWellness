@@ -92,13 +92,13 @@ async function Header() {
             </NavigationMenu>
 
             <UserButton session={session} />
-            <Link
+            {/* <Link
               href="/home/goals"
               className="inline-flex items-center rounded-3xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white dark:text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Build Protocol Now
               <ChevronRight className="w-5 h-5" />
-            </Link>
+            </Link> */}
           </div>
           {/* Show the menu button on small screens */}
           <HeaderSidebar />
